@@ -22,3 +22,8 @@ The following files must be copied manually into the `lib` folder:
 - `   7214898 22 Mar 12:38 sky2000.jar`
 - `   5151948 22 Mar 12:49 sunspot.jar`
 - `  19872723 17 Apr 10:29 textures.jar`
+
+## view navigation
+
+- Right-Click: Menu
+- Double-Click: Centre on object

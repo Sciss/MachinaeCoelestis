@@ -81,43 +81,9 @@ object SkyAnimation extends App {
     }
     e.finish()
 
-    // Reduce file size automatically using gimp
-    /*
-    String newPath = "/home/alonso/"+FileIO.getFileNameFromPath(outputFileName);
-    String gimp = "gimp -i -b \"(let* ( (image (car (file-gif-load RUN-NONINTERACTIVE \\\""+outputFileName+"\\\" \\\""+outputFileName+"\\\") ) ) ) (gimp-convert-indexed image 0 0 255 TRUE TRUE \\\"\\\") (file-gif-save RUN-NONINTERACTIVE image 0 \\\""+newPath+"\\\" \\\""+newPath+"\\\" 0 1 2000 0) )\" -b \"(gimp-quit 0)\"";
-    System.out.println("Compressing gif with gimp ... (executing "+gimp+")");
-    String script = "/home/alonso/gimp.sh";
-    WriteFile.writeAnyExternalFile(script, gimp);
-    Process p = ApplicationLauncher.executeCommand("chmod +x "+script);
-    p.waitFor();
-    p = ApplicationLauncher.executeCommand(script);
-    p.waitFor();
-    FileIO.deleteFile(script);
-     */
     println("Finished!")
     sys.exit()
-/*
-Last step: compress using GIMP. Typical compression rate of 20%
 
-For one image, given input and output names:
-gimp -i -b "(let* ( (image (car (file-gif-load RUN-NONINTERACTIVE \"jparsec_skyFull_Madrid_2012_11_10_spanish.gif\" \"jparsec_skyFull_Madrid_2012_11_10_spanish.gif\") ) ) ) (gimp-convert-indexed image 0 0 255 TRUE TRUE \"\") (file-gif-save RUN-NONINTERACTIVE image 0 \"new.gif\" \"new.gif\" 0 1 2000 0) )" -b "(gimp-quit 0)"
-
-For any image/s in current directory, and without the need of creating a script file:
-gimp -n -i -b - <<EOF
-(let* ( (file's (cadr (file-glob "*.gif" 1))) (filename "") (image 0) (layer 0) )
- (while (pair? file's)
-   (set! image (car (file-gif-load RUN-NONINTERACTIVE (car file's) (car file's))))
-   (gimp-convert-indexed image 0 0 255 TRUE TRUE "")
-   (set! filename (string-append (substring (car file's) 0 (- (string-length (car file's)) 4)) "_new.gif"))
-   (file-gif-save RUN-NONINTERACTIVE image 0 filename filename 0 1 2000 0)
-   (gimp-image-delete image)
-   (set! file's (cdr file's))
-   )
- (gimp-quit 0)
- )
-EOF
-
-*/
   } catch {
     case NonFatal(ex) =>
       ex.printStackTrace()
