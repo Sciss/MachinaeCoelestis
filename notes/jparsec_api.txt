@@ -1,0 +1,62 @@
+PlanetRenderElement
+SkyRenderElement
+  - coordinate system
+  - projection
+  - azi / ele, width, height
+  - PlanetRenderElement, TelescopeElement
+ObserverElement
+TimeElement
+EphemerisElement
+SkyRendering
+  - TimeElement, ObseverElement, EphemerisElement,
+    SkyRenderElement
+  - internal: ***RenderSky***
+
+SkyChart
+  - SkyRendering
+  - basically just provides a Swing component and
+    adds keyboard and mouse interaction
+
+:::: RenderSky ::::
+	public ArrayList<Object> planets;
+	private ReadFile re_star = null;
+
+private ArrayList<Object> drawPlanets()
+
+  -> projection.getApparentLocationInSelectedCoordinateSystem(
+	render.planetRender.ephem.getEquatorialLocation(), 	// LocationElement
+	true, 							// checkHorizon
+	false, 							// fast
+	render.planetRender.ephem.angularRadius			// angRadius (float)
+     );
+
+
+readFileOfStars
+	ReadFile re: addReadElements
+
+	 * After the file is succesfully read, the objects are added to and stored
+	 * in READ_ELEMENTS ArrayList.
+
+  -> parseJPARSECfile
+
+	// mag = entfernung
+	public StarData(LocationElement loc, float mag, String sp, String type)
+		properName, greek, etc.
+
+	versus StarElement ???
+
+stars have id (double[]). e.g. getStar or getClosestStarInScreenCoordinates return ids
+; erstes elements ist int-id, zweites ist distance
+; ABER: die int-id ist nur array index in aktuell gelesene sterne, also identifiziert nicht unabhaengig einen bestimmten stern; das macht calcStar
+
+getClosestObjectData --> data returned:
+	 * - Integer ID constant for the object type. Constants defined in this class (enum OBJECT).<BR>
+	 * - Integer array with the position in the screen x and y.<BR>
+	 * - Information for the object. For stars, planets, natural or artificial satellites, comets, asteroids and probes
+	 * an object of type {@linkplain EphemElement is returned}, for deep sky objects a String array 
+	 * (with name, RA, DEC, magnitude, subtype, size in degrees, and comments), and for supernovae a
+	 * String array (with name, RA, DEC, magnitude, and date of explosion).<BR>
+	 * - Star additional data from catalogue (only for stars).
+
+; wow you'd think they use spatial data structures for efficient search, but it's all brute force...
+

@@ -11,10 +11,11 @@ import jparsec.time.{AstroDate, TimeElement}
 import jparsec.ephem.EphemerisElement
 import jparsec.ephem.Target.TARGET
 import jparsec.graph.SkyChart
-import scala.swing.{Swing, Component}
+import scala.swing.{FlowPanel, Button, BorderPanel, Swing, Component}
 import jparsec.graph.chartRendering.SkyRenderElement.COLOR_MODE
 import Swing._
 import de.sciss.desktop.Window.Style
+import jparsec.graph.chartRendering.PlanetRenderElement
 
 object View extends SwingApplicationImpl("Machinae Coelestis") {
   lazy val menuFactory = Menu.Root()
@@ -83,7 +84,25 @@ object View extends SwingApplicationImpl("Machinae Coelestis") {
       def handler     = View.windowHandler
       def style       = Window.Auxiliary
 
-      contents        = obsView.component
+      val butQuery    = Button("Query") {
+        // println("Query")
+
+        import scala.collection.JavaConversions._
+        val r = skyRender.getRenderSkyObject
+        val p = r.planets
+        println()
+        if (p != null) p .grouped(2).foreach {
+          case Seq(position: Array[Float], r: PlanetRenderElement) =>
+            val posx = position(0)
+            val posy = position(1)
+            println(s"${r.target.getName} : $posx, $posy")
+        }
+      }
+
+      contents        = new BorderPanel {
+        add(obsView.component, BorderPanel.Position.Center)
+        add(new FlowPanel(butQuery), BorderPanel.Position.South)
+      }
       closeOperation  = Window.CloseIgnore
       location        = (width, 0)
       pack()
