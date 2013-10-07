@@ -9,7 +9,9 @@ import de.sciss.lucre.synth.expr.Strings
 import scala.annotation.tailrec
 
 object Analysis extends App {
-  val skip = 4000L  // milliseconds steps
+  val skip      = 4000L  // milliseconds steps
+  val LOG_SKIP  = false
+  val LOG_PROG  = true
 
   audioFiles()
 
@@ -34,35 +36,56 @@ object Analysis extends App {
     var pred        = Set.empty[Grapheme.Value.Audio]
     var reportTime  = 0L
 
-    def report(): Unit = {
+    def report(): Unit = if (LOG_PROG) {
       println(s"${dateFormat.format(new Date(t))} - $predPath")
       reportTime = System.currentTimeMillis()
     }
 
-    while (t < lastDateT) {
-      def findFilesAt(): (S#Acc, VersionInfo, Set[Grapheme.Value.Audio]) = {
-        val (path, info)  = csr.step { implicit tx =>
-          implicit val dtx: D#Tx = tx
-          @tailrec def loop(): S#Acc = {
-            val p1 = masterCursor.position.takeUntil(t)
-            if (p1 == predPath) {
-              t += skip
-              loop()
-            } else p1
-          }
-          val res = loop()
-          (res, res.info)
+    def findNextVersion(prevTime: Long, prevPath: S#Acc, minSkip: Long = 4000)
+                       (implicit tx: S#Tx): (Long, VersionInfo, S#Acc) = {
+      implicit val dtx: D#Tx = tx
+      val p0 = masterCursor.position
+
+      // find interval
+      @tailrec def loopFwd(t: Long, sk: Long): (Long, Long, S#Acc) = {
+        val t1 = math.min(lastDateT, t + sk)
+        if (LOG_SKIP) println(s"Skip >> ${dateFormat.format(new Date(t1))}")
+        val p1 = p0.takeUntil(t1)
+        if (t1 < lastDateT && p1 == prevPath) {
+          val sk1 = if (sk < 0x80000000L) sk << 1 else sk
+          loopFwd(t1, sk1)
+        } else {
+          (t1, sk, p1)
         }
-        val set = csr.stepFrom(path) { implicit tx =>
-          session.collectElements {
-            case e: Element.AudioGrapheme[S] => e.entity.value
-          } .toSet
-        }
-        (path, info, set)
       }
 
-      val (p, info, succ) = findFilesAt()
-      predPath = p
+      // either pf != predPath or tf == lastDateT
+      val (tf, skf, pf) = loopFwd(prevTime, minSkip)
+
+      // binary search with the interval found
+      @tailrec def loopSearch(lo: Long, hi: Long, resTime: Long, resPath: S#Acc): (Long, S#Acc) = {
+        if (hi - lo <= minSkip) return (resTime, resPath)
+
+        val mid = (lo + hi) >> 1
+        if (LOG_SKIP) println(s"Skip << ${dateFormat.format(new Date(mid))}")
+        val pm  = p0.takeUntil(mid)
+        if (pm == prevPath) loopSearch(mid, hi, resTime, resPath) else loopSearch(lo, mid, mid, pm)
+      }
+
+      val (tb, pb) = loopSearch(tf - skf, tf, tf, pf)
+      (tb, pb.info, pb)
+    }
+
+    while (t < lastDateT) {
+      val (t1, info, p) = masterCursor.step { implicit tx => findNextVersion(t, predPath, skip) }
+      val succ = csr.stepFrom(p) { implicit tx =>
+        session.collectElements {
+          case e: Element.AudioGrapheme[S] => e.entity.value
+        } .toSet
+      }
+
+      t         = t1
+      predPath  = p
       if (succ != pred) {
         val added     = succ -- pred
         val removed   = pred -- succ
@@ -72,14 +95,14 @@ object Analysis extends App {
         pred = succ
       } else {
         val elapsed = System.currentTimeMillis() - reportTime
-        if (elapsed >= 10000) report()
+        if (elapsed >= 30000) report()
         //        if (elapsed >= 60000) {
         //          println("Continue [YES, no] ?")
         //          if (Console.readLine().headOption.map(_.toUpper) == Some('N')) quit()
         //        }
 
       }
-      t += skip // skip four seconds
+      // t += skip // skip four seconds
     }
 
     quit()
