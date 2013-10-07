@@ -8,6 +8,7 @@ import de.sciss.synth.proc.Confluent
 
 package object coelestis {
   type S = Confluent
+  type D = S#D
 
   val sessionFile = userHome / "Desktop" / "MachinaeCoelestis" / "mellite" / "MachinaeCoelestis.mllt"
 
@@ -21,4 +22,6 @@ package object coelestis {
 
   val firstDate = "2013-08-16 17:10:27".toDate
   val lastDate  = "2013-08-27 01:44:54".toDate
+
+  val AnalysisCursor = "Analysis"
 }
