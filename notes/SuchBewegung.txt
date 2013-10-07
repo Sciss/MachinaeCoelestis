@@ -1,0 +1,13 @@
+val pos = (0 to 180 by 5).map { r =>
+   val phi = math.random * 2 * math.Pi
+   val dx  = math.cos(phi) * r
+   val dy  = math.sin(phi) * r
+   val x0  = dx + 8.6
+   val y0  = dy - 71.171
+   val x   = if (x0 < -180) x0 + 360 else if (x0 > 180) x0 - 360 else x0
+   val y   = if (y0 < -180) y0 + 360 else if (y0 > 180) y0 - 360 else y0
+   (x, y)
+}
+
+pos.foreach { case (lon, lat) => 
+  println(f"$lat%1.3f ${if (lat > 0) "N" else "S"}| $lon%1.3f ${if (lon > 0) "O" else "W"}") }
