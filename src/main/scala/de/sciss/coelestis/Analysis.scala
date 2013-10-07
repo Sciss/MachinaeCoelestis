@@ -4,10 +4,13 @@ import de.sciss.mellite.Element
 import de.sciss.synth.proc.Grapheme
 import java.util.Date
 import de.sciss.lucre.confluent
-import de.sciss.lucre.confluent.Cursor
+import de.sciss.lucre.confluent.{VersionInfo, Cursor}
 import de.sciss.lucre.synth.expr.Strings
+import scala.annotation.tailrec
 
 object Analysis extends App {
+  val skip = 4000L  // milliseconds steps
+
   audioFiles()
 
   def audioFiles(): Unit = {
@@ -24,19 +27,6 @@ object Analysis extends App {
       }
     }
 
-    def filesAt(time: Long): (S#Acc, Set[Grapheme.Value.Audio]) = {
-      val path  = csr.step { implicit tx =>
-        implicit val dtx: D#Tx = tx
-        masterCursor.position.takeUntil(time)
-      }
-      val set = csr.stepFrom(path) { implicit tx =>
-        session.collectElements {
-          case e: Element.AudioGrapheme[S] => e.entity.value
-        } .toSet
-      }
-      (path, set)
-    }
-
     val firstDateT  = firstDate.getTime
     val lastDateT   = lastDate.getTime
     var t           = firstDateT
@@ -50,13 +40,35 @@ object Analysis extends App {
     }
 
     while (t < lastDateT) {
-      val (p, succ) = filesAt(t)
+      def findFilesAt(): (S#Acc, VersionInfo, Set[Grapheme.Value.Audio]) = {
+        val (path, info)  = csr.step { implicit tx =>
+          implicit val dtx: D#Tx = tx
+          @tailrec def loop(): S#Acc = {
+            val p1 = masterCursor.position.takeUntil(t)
+            if (p1 == predPath) {
+              t += skip
+              loop()
+            } else p1
+          }
+          val res = loop()
+          (res, res.info)
+        }
+        val set = csr.stepFrom(path) { implicit tx =>
+          session.collectElements {
+            case e: Element.AudioGrapheme[S] => e.entity.value
+          } .toSet
+        }
+        (path, info, set)
+      }
+
+      val (p, info, succ) = findFilesAt()
       predPath = p
       if (succ != pred) {
         val added     = succ -- pred
         val removed   = pred -- succ
-        report()
-        println(s"added $added, removed $removed")
+        // report()
+        val pDate = new Date(info.timeStamp)
+        println(s"At ${dateFormat.format(pDate)} added $added, removed $removed")
         pred = succ
       } else {
         val elapsed = System.currentTimeMillis() - reportTime
@@ -67,7 +79,7 @@ object Analysis extends App {
         //        }
 
       }
-      t += 40000 // skip four seconds
+      t += skip // skip four seconds
     }
 
     quit()
