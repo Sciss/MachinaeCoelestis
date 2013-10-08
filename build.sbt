@@ -10,8 +10,14 @@ licenses := Seq("GPL v3+" -> url("http://www.gnu.org/licenses/gpl-3.0.txt"))
 
 scalaVersion := "2.10.3"
 
+resolvers ++= Seq(
+  "Mandubian repository snapshots" at "https://github.com/mandubian/mandubian-mvn/raw/master/snapshots/"
+//  "Sonatype OSS snapshots"         at "https://oss.sonatype.org/content/repositories/snapshots/"
+)
+
 libraryDependencies ++= Seq(
-  "de.sciss" %% "mellite"   % "0.5.+"
+  "de.sciss" %% "mellite"          % "0.5.+",
+  "de.sciss" %% "play-json-sealed" % "0.0.+"
 )
 
 retrieveManaged := true
