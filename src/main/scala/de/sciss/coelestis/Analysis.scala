@@ -11,6 +11,8 @@ import de.sciss.processor.Processor
 import de.sciss.processor.impl.ProcessorImpl
 import de.sciss.file._
 import play.api.libs.json.SealedTraitFormat
+import scala.concurrent.{blocking, Await}
+import scala.concurrent.duration.Duration
 
 object Analysis extends App {
   val skip      = 4000L  // milliseconds steps
@@ -25,9 +27,17 @@ object Analysis extends App {
       println(s"File '$jsonFile' already generated.")
     } else {
       val p = audioFiles()
+      // sucky executor spawns daemon threads
+      new Thread {
+        override def run(): Unit = {
+          Await.ready(p, Duration.Inf)
+          Thread.sleep(2000)
+        }
+        start()
+      }
       p.monitor()
       p.foreach { xs =>
-        println(s"Writing '$jsonFile'...")
+        println(s"\nWriting '$jsonFile'...")
         implicit val fmtTime    = SealedTraitFormat[Time          ]
         implicit val fmtInfo    = SealedTraitFormat[AudioFileInfo ]
         implicit val fmtCmd     = SealedTraitFormat[Command       ]
@@ -104,36 +114,37 @@ object Analysis extends App {
         var res         = Vec.empty[Command]
 
         while (t < lastDateT) {
-          val (t1, info, p) = masterCursor.step { implicit tx => findNextVersion(t, predPath, skip) }
-          val succ = csr.stepFrom(p) { implicit tx =>
-            session.collectElements {
-              case e: Element.AudioGrapheme[S] => e.entity.value
-            } .toSet
-          }
-
-          t         = t1
-          predPath  = p
-          if (succ != pred) {
-            val added     = succ -- pred
-            val removed   = pred -- succ
-            // report()
-            // val pDate = new Date(info.timeStamp)
-            // println(s"At ${dateFormat.format(pDate)} added $added, removed $removed")
-
-            def audioInfo(g: Grapheme.Value.Audio): AudioFileInfo =
-              AudioFileInfo(path = g.artifact.path, length = g.spec.numFrames, numChannels = g.spec.numChannels)
-
-            val time = Time(stamp = info.timeStamp, version = VersionPeek(p))
-
-            added.foreach { g =>
-              res :+= Command(time, audioInfo(g), Added)
+          blocking {
+            val (t1, info, p) = masterCursor.step { implicit tx => findNextVersion(t, predPath, skip) }
+            val succ = csr.stepFrom(p) { implicit tx =>
+              session.collectElements {
+                case e: Element.AudioGrapheme[S] => e.entity.value
+              } .toSet
             }
-            removed.foreach { g =>
-              res :+= Command(time, audioInfo(g), Removed)
-            }
-            pred = succ
-          }
 
+            t         = t1
+            predPath  = p
+            if (succ != pred) {
+              val added     = succ -- pred
+              val removed   = pred -- succ
+              // report()
+              // val pDate = new Date(info.timeStamp)
+              // println(s"At ${dateFormat.format(pDate)} added $added, removed $removed")
+
+              def audioInfo(g: Grapheme.Value.Audio): AudioFileInfo =
+                AudioFileInfo(path = g.artifact.path, length = g.spec.numFrames, numChannels = g.spec.numChannels)
+
+              val time = Time(stamp = info.timeStamp, version = VersionPeek(p))
+
+              added.foreach { g =>
+                res :+= Command(time, audioInfo(g), Added)
+              }
+              removed.foreach { g =>
+                res :+= Command(time, audioInfo(g), Removed)
+              }
+              pred = succ
+            }
+          }
           progress((t - firstDateT).toFloat / (lastDateT - firstDateT).toFloat)
         }
 

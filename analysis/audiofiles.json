@@ -1,0 +1,599 @@
+[ {
+  "time" : {
+    "stamp" : 1376666349489,
+    "version" : 15
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/linked/DreamSternenkarteSelenium130519_085440.aif",
+    "length" : 29742551,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376670125040,
+    "version" : 70
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/OrdingBuhne_081230_062407.aif",
+    "length" : 310811856,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376758820446,
+    "version" : 130
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Sheep130802_191337_Cut1807HPFEdSelfxColorRsmp.aif",
+    "length" : 6761005,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376759056075,
+    "version" : 135
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Sheep130802_191337_Cut1807HPFEdSelfxHPF.aif",
+    "length" : 8627421,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376759654555,
+    "version" : 149
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Sheep130802_191337_Cut1807HPFEdSelf.aif",
+    "length" : 8625576,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376764621076,
+    "version" : 202
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Sheep130802_191337_Cut030.aif",
+    "length" : 9261000,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376767410657,
+    "version" : 216
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Sheep130802_184546Cut532.aif",
+    "length" : 2646000,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376769580786,
+    "version" : 231
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Insect130802_1EQ.aif",
+    "length" : 274737,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376769594296,
+    "version" : 233
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Insect130802_2EQ.aif",
+    "length" : 179562,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376769737381,
+    "version" : 248
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/field_rec/JudenburgSirene130803_kurzVor12.aif",
+    "length" : 16306346,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376842859659,
+    "version" : 255
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Drm13'IchWTConDrm13'FrBckWhite.aif",
+    "length" : 16960359,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376842865779,
+    "version" : 256
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Drm13'IchWTConDrm13'OnFreWhite.aif",
+    "length" : 16960359,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376843289130,
+    "version" : 278
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Dream130510_064002_Cut1209_PlaneOnFireWhite2.aif",
+    "length" : 4560996,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376926620811,
+    "version" : 440
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/GoodLuckMyLove081230.aif",
+    "length" : 178439,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376926645876,
+    "version" : 443
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/GoodLuckMyLove081230.aif",
+    "length" : 178439,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376926974285,
+    "version" : 444
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/work/GiveMeAKiss_081230HPF.aif",
+    "length" : 302241,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376946379376,
+    "version" : 453
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/GeevorTinMineBirds100808a.aif",
+    "length" : 2535096,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376947949663,
+    "version" : 479
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/FourX2.aif",
+    "length" : 2293200,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376948214033,
+    "version" : 484
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/OrdingBuhneTauben081230HPFCut.aif",
+    "length" : 5292000,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377006466850,
+    "version" : 502
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/GeevorTinMineBirds100808b.aif",
+    "length" : 2569906,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377006588585,
+    "version" : 507
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/GeevorTinMineBirds100808c.aif",
+    "length" : 20084735,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377042382696,
+    "version" : 709
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/work/080309_222010_ParaguanaPosadaATCutRsmpEQ.aif",
+    "length" : 26444396,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377042646029,
+    "version" : 722
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/work/080309_222010_ParaguanaPosadaATCutRsmpEQ.aif",
+    "length" : 26444396,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377042662414,
+    "version" : 723
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/080309_222010_ParaguanaPosadaATCutRsmpEQ.aif",
+    "length" : 26444396,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377042975617,
+    "version" : 736
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/PerifericoFrogs_090319_214804.wav",
+    "length" : 2697772,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377072420159,
+    "version" : 759
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/PerifericoEpitelioDemo_090319_172241.wav",
+    "length" : 16980152,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377073563763,
+    "version" : 800
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/080306_125508_MeridaNebelwaldOKM.aif",
+    "length" : 26654168,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377074609182,
+    "version" : 814
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/_FeuchtT1.aif",
+    "length" : 88685600,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377074620097,
+    "version" : 815
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/_FeuchtT1.aif",
+    "length" : 88685600,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377074628915,
+    "version" : 816
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/_FeuchtT1Cut.aif",
+    "length" : 32232889,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377074648753,
+    "version" : 818
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/_FeuchtT2Cut.aif",
+    "length" : 23456613,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377074662509,
+    "version" : 820
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/_FeuchtT3Cut.aif",
+    "length" : 26179618,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377188505359,
+    "version" : 1042
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Sheep130802_184546Cut11min.aif",
+    "length" : 7938000,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377206772196,
+    "version" : 1108
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/GruonGene_E3ConFchtT'MWhte.aif",
+    "length" : 48291553,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377206782425,
+    "version" : 1109
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/GruonGene_E5ConFchtT'MWhte.aif",
+    "length" : 48307509,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377456982149,
+    "version" : 1339
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Drm13'IchWTConDrm13'FrBckWhiteExc.aif",
+    "length" : 16960359,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377457461200,
+    "version" : 1370
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Drm13'IchWTConDrm13'OnFreWhiteExc.aif",
+    "length" : 16960359,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377460763720,
+    "version" : 1390
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Sheep130802_191337Cut1545HPF.aif",
+    "length" : 1994424,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377460990467,
+    "version" : 1404
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Sheep130802_184546Cut936.aif",
+    "length" : 2646000,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377461527315,
+    "version" : 1426
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/Sheep130802_191337Cut1717HPF.aif",
+    "length" : 1546442,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377468931665,
+    "version" : 1591
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/from_mnemo/GeevorTinMineWaterTable100808.aif",
+    "length" : 9294122,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377511783229,
+    "version" : 1645
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/work/SeleniumBlueprint.aif",
+    "length" : 4473887,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377511828558,
+    "version" : 1647
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/work/SeleniumDub130826_014934.aif",
+    "length" : 21601716,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377527485519,
+    "version" : 2205
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/SeleniumDubEditWhiteWhiteHPF.aif",
+    "length" : 4470404,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377527682261,
+    "version" : 2216
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/SeleniumDubEditWhiteWhiteHPF.aif",
+    "length" : 4470404,
+    "numChannels" : 1
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377527829019,
+    "version" : 2217
+  },
+  "info" : {
+    "path" : "/Users/hhrutz/Desktop/new_projects/Judenburg/audio_work/edit/SeleniumDubEditColrWhiteHPFSchizo.aif",
+    "length" : 4470404,
+    "numChannels" : 2
+  },
+  "action" : {
+    "class" : "Added"
+  }
+} ]

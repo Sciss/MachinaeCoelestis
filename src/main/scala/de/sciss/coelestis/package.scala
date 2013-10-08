@@ -72,7 +72,7 @@ package object coelestis {
           err.printStackTrace()
 
         case Success(_) =>
-          if (printResult) println(s" Success: $proc")
+          println(if (printResult) s" Result: $proc" else " Ok.")
       }
     }
   }
