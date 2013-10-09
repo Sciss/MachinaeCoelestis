@@ -79,7 +79,7 @@ object Analysis extends App {
 
     val tsd = data.map { cmd =>
       val d = cmd.time.date
-      println(label(cmd))
+      println(s"${label(cmd)}${if (cmd.action == Removed) " [R]" else ""}")
       new SimpleTimePeriod(d, d) -> 0
     }
 
