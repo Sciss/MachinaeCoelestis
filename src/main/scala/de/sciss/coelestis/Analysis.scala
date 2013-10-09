@@ -75,15 +75,15 @@ object Analysis extends App {
 
     import Charting._
 
+    def label(cmd: Command): String = file(cmd.info.path).base
+
     val tsd = data.map { cmd =>
       val d = cmd.time.date
+      println(label(cmd))
       new SimpleTimePeriod(d, d) -> 0
     }
 
-    def genLabel(ds: XYDataset, series: Int, item: Int): String = {
-      val info = data(item).info
-      file(info.path).base
-    }
+    def genLabel(ds: XYDataset, series: Int, item: Int): String = label(data(item))
 
     Swing.onEDT {
       val ts    = tsd.toTimePeriodValuesCollection(name = "Commands")
