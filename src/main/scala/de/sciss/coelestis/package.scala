@@ -7,10 +7,8 @@ import java.util.{Date, Locale}
 import de.sciss.synth.proc.Confluent
 import scala.concurrent.ExecutionContext
 import de.sciss.processor.Processor
-import play.api.libs.json._
 import scala.util.Failure
 import scala.util.Success
-import scala.annotation.tailrec
 
 package object coelestis {
   type S = Confluent
@@ -80,30 +78,5 @@ package object coelestis {
           println(if (printResult) s" Result: $proc" else " Ok.")
       }
     }
-  }
-
-  implicit def vecFormat[A](implicit peer: Format[A]): Format[Vec[A]] = new VecFormat[A]
-
-  private final class VecFormat[A](implicit peer: Format[A]) extends Format[Vec[A]] {
-    def reads(json: JsValue): JsResult[Vec[A]] = json match {
-      case JsArray(xsj) =>
-        @tailrec def loop(rem: Vec[JsValue], res: Vec[A]): JsResult[Vec[A]] =
-          rem match {
-            case head0 +: tail =>
-              val head: JsValue = head0 // XXX IDEA highlighting bug
-              peer.reads(head) match {
-                case JsSuccess(value, _)  => loop(tail, res :+ value)
-                case err @ JsError(_)     => err
-              }
-
-            case _ => JsSuccess(res)
-          }
-
-        loop(xsj.toIndexedSeq, Vec.empty)
-
-      case _ => JsError(s"Not an array $json")
-    }
-
-    def writes(xs: Vec[A]): JsValue = JsArray(xs.map(peer.writes))
   }
 }

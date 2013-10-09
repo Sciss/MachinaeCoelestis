@@ -10,11 +10,11 @@ import scala.annotation.tailrec
 import de.sciss.processor.Processor
 import de.sciss.processor.impl.ProcessorImpl
 import de.sciss.file._
-import play.api.libs.json.{Format, SealedTraitFormat}
+import play.api.libs.json.Format
 import scala.concurrent.{blocking, Await}
 import scala.concurrent.duration.Duration
 import scalax.chart.{ChartFactories, Charting}
-import org.jfree.data.time.{SimpleTimePeriod, TimePeriod}
+import org.jfree.data.time.SimpleTimePeriod
 import scala.swing.{Frame, Swing}
 import scala.swing.event.WindowClosing
 import org.jfree.chart.labels.{ItemLabelAnchor, ItemLabelPosition}
@@ -23,6 +23,10 @@ import java.awt.{Rectangle, Color}
 import de.sciss.pdflitz
 import de.sciss.pdflitz.Generate.QuickDraw
 import Swing._
+import de.sciss.play.json.AutoFormat
+import org.jfree.util.ShapeUtilities
+import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer
+import java.awt.geom.Line2D
 
 object Analysis extends App {
   val skip      = 4000L  // milliseconds steps
@@ -34,10 +38,10 @@ object Analysis extends App {
   lazy val jsonFile = analysisDir / "audiofiles.json"
 
   implicit def format: Format[Vec[Command]] = {
-    implicit val fmtTime    = SealedTraitFormat[Time          ]
-    implicit val fmtInfo    = SealedTraitFormat[AudioFileInfo ]
-    implicit val fmtCmd     = SealedTraitFormat[Command       ]
-    vecFormat[Command]
+    implicit val fmtTime    = AutoFormat[Time          ]
+    implicit val fmtInfo    = AutoFormat[AudioFileInfo ]
+    implicit val fmtCmd     = AutoFormat[Command       ]
+    AutoFormat[Vec[Command]]
   }
 
   def generateJSON(done: => Unit): Unit = {
@@ -84,18 +88,29 @@ object Analysis extends App {
     Swing.onEDT {
       val ts    = tsd.toTimePeriodValuesCollection(name = "Commands")
       val chart = ChartFactories.XYLineChart(dataset = ts, title = "Audio File Import",
-        domainAxisLabel = "Time", legend = false)
+        domainAxisLabel = "", legend = false)
       chart.labelGenerator = Some(genLabel _)
       val plot = chart.plot
+      plot.setBackgroundPaint(Color.white)
 
       val yAxis = plot.getRangeAxis
       yAxis.setVisible(false)
-      yAxis.setRange(0, 1)
-      val renderer = plot.getRenderer
+      yAxis.setRange(-0.04, 1.0)
+      val renderer = plot.getRenderer.asInstanceOf[XYLineAndShapeRenderer]
       renderer.setSeriesPositiveItemLabelPosition(0,
-        new ItemLabelPosition(ItemLabelAnchor.OUTSIDE3, TextAnchor.BOTTOM_LEFT, TextAnchor.BOTTOM_LEFT,
+        // text-anchor, rotation-anchor
+        new ItemLabelPosition(ItemLabelAnchor.OUTSIDE3, TextAnchor.BOTTOM_LEFT, TextAnchor.BASELINE_LEFT,
           -90.0.toRadians))
-      plot.setBackgroundPaint(Color.white)
+      // renderer.setItemLabelAnchorOffset(20f)
+      renderer.setBaseLinesVisible(false)
+      // renderer.setBaseShapesVisible(true)
+      renderer.setSeriesShape(0, new Line2D.Float(0, 0, 0, 12)) // new Rectangle(0, -2, 1, 12))
+        // .createLineRegion(new Line2D.Float(0f, 0f, 0f, 2f), 0.5f)) // .createDownTriangle(4f))
+      // renderer.setSeriesFillPaint(0, Color.black)
+      // renderer.setSeriesOutlinePaint(0, new Color(0, 0, 0, 0))
+      // renderer.setBasePaint(Color.black)
+      renderer.setSeriesShapesVisible(0, true)
+      renderer.setSeriesPaint(0, Color.black)
 
       val p = chart.toPanel
       val f = new Frame {
