@@ -18,7 +18,8 @@ resolvers ++= Seq(
 libraryDependencies ++= Seq(
   "de.sciss" %% "mellite"          % "0.5.+",
   "de.sciss" %% "play-json-sealed" % "0.0.+" exclude("org.scala-stm", "scala-stm_2.10.0"), // exclude due to "Conflicting cross-version suffixes"
-  "com.github.wookietreiber" %% "scala-chart" % "latest.integration"
+  "de.sciss" %% "pdflitz"          % "1.0.+",
+  "com.github.wookietreiber" %% "scala-chart" % "0.3.0-SNAPSHOT"
 )
 
 retrieveManaged := true

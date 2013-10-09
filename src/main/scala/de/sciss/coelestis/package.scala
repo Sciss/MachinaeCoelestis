@@ -21,7 +21,15 @@ package object coelestis {
   lazy val firstDate    = "2013-08-16 17:10:27".toDate
   lazy val lastDate     = "2013-08-27 01:44:54".toDate
 
-  lazy val session      = Document.read(sessionFile)
+  private val sync = new AnyRef
+  private var _sessionOpen = false
+
+  def sessionOpen: Boolean = _sessionOpen
+
+  lazy val session      = {
+    sync.synchronized(_sessionOpen = true)
+    Document.read(sessionFile)
+  }
 
   lazy val dateFormat   = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US)
 

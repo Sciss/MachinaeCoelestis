@@ -13,6 +13,16 @@ import de.sciss.file._
 import play.api.libs.json.{Format, SealedTraitFormat}
 import scala.concurrent.{blocking, Await}
 import scala.concurrent.duration.Duration
+import scalax.chart.{ChartFactories, Charting}
+import org.jfree.data.time.{SimpleTimePeriod, TimePeriod}
+import scala.swing.{Frame, Swing}
+import scala.swing.event.WindowClosing
+import org.jfree.chart.labels.{ItemLabelAnchor, ItemLabelPosition}
+import org.jfree.ui.TextAnchor
+import java.awt.{Rectangle, Color}
+import de.sciss.pdflitz
+import de.sciss.pdflitz.Generate.QuickDraw
+import Swing._
 
 object Analysis extends App {
   val skip      = 4000L  // milliseconds steps
@@ -59,10 +69,57 @@ object Analysis extends App {
     // ...
     // println(s"Data.size = ${data.size}")
 
+    import Charting._
 
+    val tsd = data.map { cmd =>
+      val d = cmd.time.date
+      new SimpleTimePeriod(d, d) -> 0
+    }
 
-    println("TODO: generate plot!") // TODO: continue here
-    quit()
+    def genLabel(ds: XYDataset, series: Int, item: Int): String = {
+      val info = data(item).info
+      file(info.path).base
+    }
+
+    Swing.onEDT {
+      val ts    = tsd.toTimePeriodValuesCollection(name = "Commands")
+      val chart = ChartFactories.XYLineChart(dataset = ts, title = "Audio File Import",
+        domainAxisLabel = "Time", legend = false)
+      chart.labelGenerator = Some(genLabel _)
+      val plot = chart.plot
+
+      val yAxis = plot.getRangeAxis
+      yAxis.setVisible(false)
+      yAxis.setRange(0, 1)
+      val renderer = plot.getRenderer
+      renderer.setSeriesPositiveItemLabelPosition(0,
+        new ItemLabelPosition(ItemLabelAnchor.OUTSIDE3, TextAnchor.BOTTOM_LEFT, TextAnchor.BOTTOM_LEFT,
+          -90.0.toRadians))
+      plot.setBackgroundPaint(Color.white)
+
+      val p = chart.toPanel
+      val f = new Frame {
+        contents = p
+
+        listenTo(this)
+        reactions += {
+          case WindowClosing(_) => quit()
+        }
+      }
+
+      val w   = 1000
+      val h   = 360
+      val sz  = new Rectangle(0, 0, w, h)
+      val draw = QuickDraw(w -> h) { g =>
+        chart.peer.draw(g, sz)
+      }
+
+      new pdflitz.SaveAction(draw :: Nil).setupMenu(f)
+
+      f.pack()
+      f.centerOnScreen()
+      f.open()
+    }
   }
 
   def audioFiles(): Processor[Vec[Command], Any] = {
@@ -175,7 +232,7 @@ object Analysis extends App {
 
   def quit(): Unit = {
     println("Closing...")
-    session.system.close()
+    if (sessionOpen) session.system.close()
     sys.exit()
   }
 }
