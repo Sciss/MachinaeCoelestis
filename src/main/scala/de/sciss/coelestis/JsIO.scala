@@ -4,6 +4,7 @@ import java.io.{FileInputStream, FileOutputStream, OutputStreamWriter, File}
 import play.api.libs.json.{JsError, JsSuccess, Reads, Writes, Json}
 import scala.util.{Success, Failure, Try}
 
+/** Helper object to read and write JSON objects from and to files. */
 object JsIO {
   def write[S](value: S, file: File)(implicit writes: Writes[S]): Try[Unit] = Try {
     val json  = Json.toJson(value) // (Formats.settings)

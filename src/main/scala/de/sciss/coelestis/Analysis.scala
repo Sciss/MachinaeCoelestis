@@ -10,7 +10,7 @@ import scala.annotation.tailrec
 import de.sciss.processor.Processor
 import de.sciss.processor.impl.ProcessorImpl
 import de.sciss.file._
-import play.api.libs.json.SealedTraitFormat
+import play.api.libs.json.{Format, SealedTraitFormat}
 import scala.concurrent.{blocking, Await}
 import scala.concurrent.duration.Duration
 
@@ -19,12 +19,21 @@ object Analysis extends App {
   val LOG_SKIP  = false
   val LOG_PROG  = true
 
-  run()
+  generateJSON(plot())
 
-  def run(): Unit = {
-    val jsonFile = analysisDir / "audiofiles.json"
+  lazy val jsonFile = analysisDir / "audiofiles.json"
+
+  implicit def format: Format[Vec[Command]] = {
+    implicit val fmtTime    = SealedTraitFormat[Time          ]
+    implicit val fmtInfo    = SealedTraitFormat[AudioFileInfo ]
+    implicit val fmtCmd     = SealedTraitFormat[Command       ]
+    vecFormat[Command]
+  }
+
+  def generateJSON(done: => Unit): Unit = {
     if (jsonFile.isFile) {
       println(s"File '$jsonFile' already generated.")
+      done
     } else {
       val p = audioFiles()
       // sucky executor spawns daemon threads
@@ -38,14 +47,22 @@ object Analysis extends App {
       p.monitor()
       p.foreach { xs =>
         println(s"\nWriting '$jsonFile'...")
-        implicit val fmtTime    = SealedTraitFormat[Time          ]
-        implicit val fmtInfo    = SealedTraitFormat[AudioFileInfo ]
-        implicit val fmtCmd     = SealedTraitFormat[Command       ]
-        implicit val fmt        = vecFormat[Command]
         JsIO.write(xs, jsonFile)
-        quit()
+        // quit()
+        done
       }
     }
+  }
+
+  def plot(): Unit = {
+    val data = JsIO.read[Vec[Command]](jsonFile).get
+    // ...
+    // println(s"Data.size = ${data.size}")
+
+
+
+    println("TODO: generate plot!") // TODO: continue here
+    quit()
   }
 
   def audioFiles(): Processor[Vec[Command], Any] = {

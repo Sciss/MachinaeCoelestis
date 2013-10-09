@@ -7,12 +7,9 @@ import java.util.{Date, Locale}
 import de.sciss.synth.proc.Confluent
 import scala.concurrent.ExecutionContext
 import de.sciss.processor.Processor
-import scala.util.{Try, Success, Failure}
 import play.api.libs.json._
 import scala.util.Failure
-import scala.Some
 import scala.util.Success
-import play.api.libs.json.JsObject
 import scala.annotation.tailrec
 
 package object coelestis {
