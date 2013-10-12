@@ -2,11 +2,8 @@ package de.sciss.coelestis
 
 import de.sciss.mellite.Element
 import de.sciss.synth.proc.Grapheme
-import java.util.Date
 import de.sciss.lucre.confluent
-import de.sciss.lucre.confluent.{VersionPeek, VersionInfo, Cursor}
-import de.sciss.lucre.synth.expr.Strings
-import scala.annotation.tailrec
+import de.sciss.lucre.confluent.VersionPeek
 import de.sciss.processor.Processor
 import de.sciss.processor.impl.ProcessorImpl
 import de.sciss.file._
@@ -27,20 +24,23 @@ import de.sciss.play.json.AutoFormat
 import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer
 import java.awt.geom.Line2D
 
-object AudioFileAnalysis {
+object AudioFileAnalysis extends AnalysisLike {
   val skip      = 4000L  // milliseconds steps
-  val LOG_SKIP  = false
   val LOG_PROG  = true
+
+  case class AudioFileInfo(path: String, length: Long, numChannels: Int)
+
+  case class AudioFileCommand(time: Time, info: AudioFileInfo, action: Action)
 
   def apply(): Unit = generateJSON(plot())
 
   lazy val jsonFile = analysisDir / "audiofiles.json"
 
-  implicit def format: Format[Vec[Command]] = {
+  implicit def format: Format[Vec[AudioFileCommand]] = {
     implicit val fmtTime    = AutoFormat[Time          ]
     implicit val fmtInfo    = AutoFormat[AudioFileInfo ]
-    implicit val fmtCmd     = AutoFormat[Command       ]
-    AutoFormat[Vec[Command]]
+    implicit val fmtCmd     = AutoFormat[AudioFileCommand       ]
+    AutoFormat[Vec[AudioFileCommand]]
   }
 
   def generateJSON(done: => Unit): Unit = {
@@ -68,13 +68,13 @@ object AudioFileAnalysis {
   }
 
   def plot(): Unit = {
-    val data = JsIO.read[Vec[Command]](jsonFile).get
+    val data = JsIO.read[Vec[AudioFileCommand]](jsonFile).get
     // ...
     // println(s"Data.size = ${data.size}")
 
     import Charting._
 
-    def label(cmd: Command): String = file(cmd.info.path).base
+    def label(cmd: AudioFileCommand): String = file(cmd.info.path).base
 
     val tsd = data.map { cmd =>
       val d = cmd.time.date
@@ -138,70 +138,15 @@ object AudioFileAnalysis {
     }
   }
 
-  def audioFiles(): Processor[Vec[Command], Any] = {
-    val masterCursor = session.cursors.cursor
-    val csr: Cursor[S, D] = masterCursor.step { implicit tx =>
-      implicit val dtx: D#Tx = tx
-      val existing = session.cursors.descendants.toList.collectFirst {
-        case c if c.name.value == AnalysisCursor => c.cursor
-      }
-      existing.getOrElse {
-        val cNew  = session.cursors.addChild(masterCursor.position)
-        cNew.name = Strings.newVar[D](Strings.newConst(AnalysisCursor))
-        cNew.cursor
-      }
-    }
+  def audioFiles(): Processor[Vec[AudioFileCommand], Any] = {
+    val csr = analysisCursor
 
-    val firstDateT  = firstDate.getTime
-    val lastDateT   = lastDate.getTime
-    // var reportTime  = 0L
-
-    //    def report(): Unit = if (LOG_PROG) {
-    //      println(s"${dateFormat.format(new Date(t))} - $predPath")
-    //      reportTime = System.currentTimeMillis()
-    //    }
-
-    def findNextVersion(prevTime: Long, prevPath: S#Acc, minSkip: Long = 4000)
-                       (implicit tx: S#Tx): (Long, VersionInfo, S#Acc) = {
-      implicit val dtx: D#Tx = tx
-      val p0 = masterCursor.position
-
-      // find interval
-      @tailrec def loopFwd(t: Long, sk: Long): (Long, Long, S#Acc) = {
-        val t1 = math.min(lastDateT, t + sk)
-        if (LOG_SKIP) println(s"Skip >> ${dateFormat.format(new Date(t1))}")
-        val p1 = p0.takeUntil(t1)
-        if (t1 < lastDateT && p1 == prevPath) {
-          val sk1 = if (sk < 0x80000000L) sk << 1 else sk
-          loopFwd(t1, sk1)
-        } else {
-          (t1, sk, p1)
-        }
-      }
-
-      // either pf != predPath or tf == lastDateT
-      val (tf, skf, pf) = loopFwd(prevTime, minSkip)
-
-      // binary search with the interval found
-      @tailrec def loopSearch(lo: Long, hi: Long, resTime: Long, resPath: S#Acc): (Long, S#Acc) = {
-        if (hi - lo <= minSkip) return (resTime, resPath)
-
-        val mid = (lo + hi) >> 1
-        if (LOG_SKIP) println(s"Skip << ${dateFormat.format(new Date(mid))}")
-        val pm  = p0.takeUntil(mid)
-        if (pm == prevPath) loopSearch(mid, hi, resTime, resPath) else loopSearch(lo, mid, mid, pm)
-      }
-
-      val (tb, pb) = loopSearch(tf - skf, tf, tf, pf)
-      (tb, pb.info, pb)
-    }
-
-    val proc = new ProcessorImpl[Vec[Command], Any] {
-      def body(): Vec[Command] = {
+    val proc = new ProcessorImpl[Vec[AudioFileCommand], Any] {
+      def body(): Vec[AudioFileCommand] = {
         var t           = firstDateT
         var predPath: S#Acc = confluent.Sys.Acc.root[S]
         var pred        = Set.empty[Grapheme.Value.Audio]
-        var res         = Vec.empty[Command]
+        var res         = Vec.empty[AudioFileCommand]
 
         while (t < lastDateT) {
           blocking {
@@ -227,10 +172,10 @@ object AudioFileAnalysis {
               val time = Time(stamp = info.timeStamp, version = VersionPeek(p))
 
               added.foreach { g =>
-                res :+= Command(time, audioInfo(g), Added)
+                res :+= AudioFileCommand(time, audioInfo(g), Added)
               }
               removed.foreach { g =>
-                res :+= Command(time, audioInfo(g), Removed)
+                res :+= AudioFileCommand(time, audioInfo(g), Removed)
               }
               pred = succ
             }
@@ -244,11 +189,5 @@ object AudioFileAnalysis {
     }
     proc.start()
     proc
-  }
-
-  def quit(): Unit = {
-    println("Closing...")
-    if (sessionOpen) session.system.close()
-    sys.exit()
   }
 }
