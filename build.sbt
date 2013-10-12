@@ -20,6 +20,7 @@ libraryDependencies ++= Seq(
   "de.sciss" %% "play-json-sealed" % "0.1.+" exclude("org.scala-stm", "scala-stm_2.10.0"), // exclude due to "Conflicting cross-version suffixes"
   "de.sciss" %% "pdflitz"          % "1.0.+",
   "com.github.wookietreiber" %% "scala-chart" % "0.3.0"
+  // "de.sciss" % "intensitypalette" % "1.0.0"
 )
 
 retrieveManaged := true

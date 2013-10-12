@@ -72,12 +72,13 @@ trait AnalysisLike {
     sys.exit()
   }
 
-  def showChart(chart: Chart[_], w: Int, h: Int): Unit = {
+  def showChart(chart: Chart[_], w: Int, h: Int, frameTitle: String = ""): Unit = {
     import Swing._
     val p = chart.toPanel
     p.peer.asInstanceOf[org.jfree.chart.ChartPanel].setMouseWheelEnabled(true) // SO #19281374
     val f = new Frame {
       contents = p
+        if (frameTitle.nonEmpty) title = frameTitle
 
       listenTo(this)
       reactions += {
