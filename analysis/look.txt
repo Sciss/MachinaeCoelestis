@@ -1,0 +1,85 @@
+----- cutting -----
+
+{
+  "time" : {
+    "stamp" : 1377560623665,
+    "version" : 2274
+  },
+  "region" : {
+    "id" : 56633,
+    "time" : {
+      "start" : 35655986,
+      "stop" : 35776931
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377560623665,
+    "version" : 2274
+  },
+  "region" : {
+    "id" : 57615,
+    "time" : {
+      "start" : 35776931,
+      "stop" : 37364999
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1377560623665,
+    "version" : 2274
+  },
+  "region" : {
+    "id" : 56633,
+    "time" : {
+      "start" : 35655986,
+      "stop" : 37364999
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+} 
+
+id: 56633	35655986, 		37364999  old
+id: 56633	35655986, 35776931		  new
+id: 57615	          35776
+931,	37364999  (right)
+
+----- resizing/moving -----
+
+  "time" : {
+    "stamp" : 1376666802305,
+    "version" : 31
+  },
+  "region" : {
+    "id" : 319,
+    "time" : {
+      "start" : 266223,
+      "stop" : 3808752
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1376666802305,
+    "version" : 31
+  },
+  "region" : {
+    "id" : 319,
+    "time" : {
+      "start" : 298690,
+      "stop" : 3808752
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }

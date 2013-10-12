@@ -121,4 +121,8 @@ package object coelestis {
       JsObject(f1)
     }
   }
+
+  implicit class RichIterable[A](it: Iterable[A]) {
+    def counted: Map[A, Int] = (Map.empty[A, Int].withDefaultValue(0) /: it)((m, e) => m.updated(e, m(e) + 1))
+  }
 }

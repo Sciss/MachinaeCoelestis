@@ -112,29 +112,7 @@ object AudioFileAnalysis extends AnalysisLike {
       renderer.setSeriesShapesVisible(0, true)
       renderer.setSeriesPaint(0, Color.black)
 
-      val p = chart.toPanel
-      p.peer.asInstanceOf[org.jfree.chart.ChartPanel].setMouseWheelEnabled(true) // SO #19281374
-      val f = new Frame {
-        contents = p
-
-        listenTo(this)
-        reactions += {
-          case WindowClosing(_) => quit()
-        }
-      }
-
-      val w   = 1000
-      val h   = 360
-      val sz  = new Rectangle(0, 0, w, h)
-      val draw = QuickDraw(w -> h) { g =>
-        chart.peer.draw(g, sz)
-      }
-
-      new pdflitz.SaveAction(draw :: Nil).setupMenu(f)
-
-      f.pack()
-      f.centerOnScreen()
-      f.open()
+      showChart(chart, w = 1000, h = 360)
     }
   }
 

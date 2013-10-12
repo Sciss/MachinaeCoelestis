@@ -12,13 +12,23 @@ import scala.concurrent.duration.Duration
 import play.api.libs.json.{JsSuccess, JsError, JsResult, JsNumber, JsObject, JsValue, Format}
 import de.sciss.play.json.{Formats, AutoFormat}
 import de.sciss.synth.proc.{Attribute, ProcKeys, FadeSpec}
+import de.sciss.model.Change
+import scalax.chart
 
 object RegionAnalysis extends AnalysisLike {
   val skip = 200L  // milliseconds steps
 
   // case class Region(id: Int, time: Span)
   case class Region2(id: Int, time: Span, gain: Double, fades: (FadeSpec.Value, FadeSpec.Value),
-                     muted: Boolean, kind: RegionKind)
+                     muted: Boolean, kind: RegionKind) {
+
+    override def toString = {
+      val gainString  = if (gain == 1.0) "" else s", gain = $gain"
+      val fadesString = if (fades == (NoFade, NoFade)) "" else s", $fades"
+      val mutedString = if (muted) ", muted = true" else ""
+      s"Region($id, $time$gainString$fadesString$mutedString, $kind)"
+    }
+  }
 
   case class AudioRegion(artifact: File) extends RegionKind
   case object FuncRegion extends RegionKind
@@ -30,7 +40,7 @@ object RegionAnalysis extends AnalysisLike {
   val NoFade = FadeSpec.Value(0L)
 
   def apply(): Unit = {
-    generateJSON(plot())
+    generateJSON(plotGlobal())
   }
 
   // lazy val jsonFile = analysisDir / "regions.json"
@@ -97,20 +107,118 @@ object RegionAnalysis extends AnalysisLike {
     }
   }
 
-  def plot(): Unit = {
+  sealed trait ActionOrMutation {
+    def pieOrder: Int
+    def actionName: String
+  }
+  sealed trait Action2
+  case class RegionAdded  (r: Region2) extends Action2 with ActionOrMutation {
+    def actionName = "Add"
+    def pieOrder = 1
+  }
+  case class RegionRemoved(r: Region2) extends Action2 with ActionOrMutation {
+    def actionName = "Remove"
+    def pieOrder = 2
+  }
+  case class RegionMutated(ch: Change[Region2], mutation: Mutation) extends Action2
+  case class RegionSplit(old: Change[Region2], nu: Region2) extends Action2 with ActionOrMutation {
+    def actionName = "Split"
+    def pieOrder = 3
+  }
+
+  sealed trait Mutation extends ActionOrMutation
+  case object MoveChange   extends Mutation {
+    def actionName = "Move"
+    def pieOrder = 4
+  }
+  case object ResizeChange extends Mutation {
+    def actionName = "Resize"
+    def pieOrder = 5
+  }
+  case object GainChange   extends Mutation {
+    def actionName = "Gain"
+    def pieOrder = 6
+  }
+  case object FadeChange   extends Mutation {
+    def actionName = "Fade"
+    def pieOrder = 7
+  }
+  case object MuteChange   extends Mutation {
+    def actionName = "Mute"
+    def pieOrder = 8
+  }
+
+  case class TimedAction(time: Time, action: Action2)
+
+  def plotGlobal(): Unit = {
+    val history = globalHistory()
+
+    import chart._
+    import Charting._
+
+    val sum = history.map(_.action match {
+      case RegionMutated(_, m) => m
+      case a: ActionOrMutation => a
+    }).counted.toIndexedSeq.sortBy(_._1.pieOrder).map { case (action, count) => action.actionName -> count }
+
+    val ds: PieDataset = sum.toPieDataset
+    val ch = ChartFactories.PieChart(ds)
+    showChart(ch, w = 600, h = 600)
+  }
+
+  def globalHistory(): Vec[TimedAction] = {
     val data  = JsIO.read[Res](jsonFile).get
-    val map   = data.groupBy(_.time.version)
-    //    val rich  = map.mapValues { sq =>
-    //
-    //      def loop(in: Res, res: Res): Res = in match {
-    //        case head +: tail =>
-    //
-    //
-    //          ???
-    //        case _ => res
-    //      }
-    //
-    //    }
+    // var state = Map.empty[Int, Region2]
+
+    var history = Vec.empty[TimedAction]
+
+    val map   = data.groupBy(_.time.version).toIndexedSeq.sortBy(_._1)
+    map.foreach { case (_, cmds) =>
+      cmds.groupBy(_.region.id).foreach { case (_, sq) =>
+        val action = sq match {
+          case Vec(single) =>
+            single.action match {
+              case Added    => RegionAdded  (single.region)
+              case Removed  => RegionRemoved(single.region)
+            }
+
+          case Vec(a, b) =>
+            val (old, nu) = if (a.action == Removed && b.action == Added  ) (a.region, b.region)
+            else            if (a.action == Added   && b.action == Removed) (b.region, a.region)
+            else sys.error("Unexpected")
+
+            val mutation = if (old.time != nu.time) {
+              if (old.time.start == nu.time.start || old.time.stop == nu.time.stop) ResizeChange
+              else MoveChange
+            } else if (old.gain  != nu.gain ) GainChange
+            else   if (old.fades != nu.fades) FadeChange
+            else   if (old.muted != nu.muted) MuteChange
+            else sys.error("Unexpected")
+
+            RegionMutated(Change(old, nu), mutation)
+        }
+        val time = sq.head.time
+        // heuristically determine split and two-step resize
+        (history, action) match {
+          case (init :+ TimedAction(`time`,
+            RegionMutated(Change(rOld @ Region2(_, span1Old, _, _, _, _), rOld2 @ Region2(_, span1, _, _, _, _)), ResizeChange)),
+              RegionAdded(rNew @ Region2(_, span2, _, _, _, _)))
+            if span1Old.start == span1.start && span1.stop == span2.start && span1Old.stop == span2.stop =>
+
+              history = init :+ TimedAction(time, RegionSplit(Change(rOld, rOld2), rNew))
+
+          case (init :+ TimedAction(timeOld, RegionSplit(Change(rOld, rOld2), rNu)), RegionRemoved(rRem)) if rRem == rNu || rRem == rOld2 =>
+              history = init :+ TimedAction(timeOld,
+                RegionMutated(Change(rOld, if (rRem == rNu) rOld2 else rNu), ResizeChange))
+
+          case _ =>
+
+              history :+= TimedAction(time, action)
+        }
+      }
+    }
+
+    history // .foreach(println)
   }
 
   def gather(): Processor[Res, Any] = {

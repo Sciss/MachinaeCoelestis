@@ -4,6 +4,12 @@ import de.sciss.lucre.confluent.{VersionInfo, Cursor}
 import de.sciss.lucre.synth.expr.Strings
 import java.util.Date
 import scala.annotation.tailrec
+import scala.swing.{Swing, Frame}
+import scala.swing.event.WindowClosing
+import java.awt.Rectangle
+import de.sciss.pdflitz.Generate.QuickDraw
+import de.sciss.pdflitz
+import scalax.chart.Chart
 
 trait AnalysisLike {
   lazy val masterCursor: Cursor[S, D] = session.cursors.cursor
@@ -64,5 +70,30 @@ trait AnalysisLike {
     println("Closing...")
     if (sessionOpen) session.system.close()
     sys.exit()
+  }
+
+  def showChart(chart: Chart[_], w: Int, h: Int): Unit = {
+    import Swing._
+    val p = chart.toPanel
+    p.peer.asInstanceOf[org.jfree.chart.ChartPanel].setMouseWheelEnabled(true) // SO #19281374
+    val f = new Frame {
+      contents = p
+
+      listenTo(this)
+      reactions += {
+        case WindowClosing(_) => quit()
+      }
+    }
+
+    val sz  = new Rectangle(0, 0, w, h)
+    val draw = QuickDraw(w -> h) { g =>
+      chart.peer.draw(g, sz)
+    }
+
+    new pdflitz.SaveAction(draw :: Nil).setupMenu(f)
+
+    f.pack()
+    f.centerOnScreen()
+    f.open()
   }
 }
