@@ -14,6 +14,8 @@ import de.sciss.play.json.{Formats, AutoFormat}
 import de.sciss.synth.proc.{Attribute, ProcKeys, FadeSpec}
 import de.sciss.model.Change
 import scalax.chart
+import java.awt.{Font, Color}
+import org.jfree.data.general
 
 object RegionAnalysis extends AnalysisLike {
   val skip = 200L  // milliseconds steps
@@ -107,46 +109,52 @@ object RegionAnalysis extends AnalysisLike {
     }
   }
 
-  sealed trait ActionOrMutation {
-    def pieOrder: Int
-    def actionName: String
+  sealed trait ActionType {
+    def name : String
   }
-  sealed trait Action2
-  case class RegionAdded  (r: Region2) extends Action2 with ActionOrMutation {
-    def actionName = "Add"
-    def pieOrder = 1
+  sealed trait Action2 {
+    def tpe: ActionType
   }
-  case class RegionRemoved(r: Region2) extends Action2 with ActionOrMutation {
-    def actionName = "Remove"
-    def pieOrder = 2
+  object RegionAdded extends ActionType {
+    def name = "Add"
   }
-  case class RegionMutated(ch: Change[Region2], mutation: Mutation) extends Action2
-  case class RegionSplit(old: Change[Region2], nu: Region2) extends Action2 with ActionOrMutation {
-    def actionName = "Split"
-    def pieOrder = 3
+  case class RegionAdded  (r: Region2) extends Action2 {
+    def tpe = RegionAdded
+  }
+  object RegionRemoved extends ActionType {
+    def name = "Remove"
+  }
+  case class RegionRemoved(r: Region2) extends Action2 {
+    def tpe = RegionRemoved
+  }
+  case class RegionMutated(ch: Change[Region2], mutation: Mutation) extends Action2 {
+    def tpe = mutation
+  }
+  object RegionSplit extends ActionType {
+    def name = "Split"
+  }
+  case class RegionSplit(old: Change[Region2], nu: Region2) extends Action2 {
+    def tpe = RegionSplit
   }
 
-  sealed trait Mutation extends ActionOrMutation
+  sealed trait Mutation extends ActionType
   case object MoveChange   extends Mutation {
-    def actionName = "Move"
-    def pieOrder = 4
+    def name = "Move"
   }
   case object ResizeChange extends Mutation {
-    def actionName = "Resize"
-    def pieOrder = 5
+    def name = "Resize"
   }
   case object GainChange   extends Mutation {
-    def actionName = "Gain"
-    def pieOrder = 6
+    def name = "Gain"
   }
   case object FadeChange   extends Mutation {
-    def actionName = "Fade"
-    def pieOrder = 7
+    def name = "Fade"
   }
   case object MuteChange   extends Mutation {
-    def actionName = "Mute"
-    def pieOrder = 8
+    def name = "Mute"
   }
+
+  val PieTypes = Seq(RegionAdded, RegionRemoved, RegionSplit, MoveChange, ResizeChange, GainChange, FadeChange, MuteChange)
 
   case class TimedAction(time: Time, action: Action2)
 
@@ -156,13 +164,34 @@ object RegionAnalysis extends AnalysisLike {
     import chart._
     import Charting._
 
-    val sum = history.map(_.action match {
+    val sum0 = history.map(_.action match {
       case RegionMutated(_, m) => m
-      case a: ActionOrMutation => a
-    }).counted.toIndexedSeq.sortBy(_._1.pieOrder).map { case (action, count) => action.actionName -> count }
+      case a => a.tpe
+    }).counted
+
+    //    println(s"history ${history.size}, counted ${sum0.size}")
+    //    println(sum0.map { case (action, count) => action.name -> count })
+
+    val sum  = sum0.toIndexedSeq.sortBy(x => PieTypes.indexOf(x._1)).map { case (action, count) => action.name -> count }
+    val sumM = sum.toMap
 
     val ds: PieDataset = sum.toPieDataset
-    val ch = ChartFactories.PieChart(ds)
+    val ch    = ChartFactories.PieChart(ds, legend = false)
+    val plot  = ch.plot
+    PieTypes.zipWithIndex.foreach { case (tpe, idx) =>
+      plot.setSectionPaint(tpe.name, if ((idx % 2) == 0) Color.darkGray else Color.lightGray)
+    }
+    // plot.setSectionPaint(RegionRemoved.name, Color.white)
+    plot.setBackgroundPaint(Color.white)
+    plot.setLabelBackgroundPaint(null)
+    plot.setLabelOutlinePaint(null)
+    plot.setLabelShadowPaint(null)
+    plot.setLabelFont(new Font("Helvetica", Font.PLAIN, 12))
+    val lbGen: (org.jfree.data.general.PieDataset,Comparable[_]) => String = { (_, key) =>
+      s"${sumM(key.toString)}\u00D7 $key"
+    }
+    ch.labelGenerator = Some(lbGen)
+
     showChart(ch, w = 600, h = 600)
   }
 
