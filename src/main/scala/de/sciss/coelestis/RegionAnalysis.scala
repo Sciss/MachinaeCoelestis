@@ -43,7 +43,8 @@ object RegionAnalysis extends AnalysisLike {
   val NoFade = FadeSpec.Value(0L)
 
   def apply(): Unit = {
-    generateJSON(0)(plotGlobal(0))
+    // generateJSON(0)(plotGlobal(0))
+    plotGlobal(-1)
   }
 
   // lazy val jsonFile = analysisDir / "regions.json"
@@ -165,7 +166,12 @@ object RegionAnalysis extends AnalysisLike {
   case class TimedAction(time: Time, action: Action2)
 
   def plotGlobal(iteration: Int): Unit = {
-    val history = globalHistory(iteration)
+    val history = {
+      if (iteration >= 0) globalHistory(iteration)
+      else {
+        (0 to 4).flatMap(globalHistory).sortBy(_.time.version)
+      }
+    }
 
     import chart._
     import Charting._
