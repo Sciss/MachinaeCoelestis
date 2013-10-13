@@ -2,7 +2,7 @@ package de.sciss
 
 import _root_.play.api.libs.json.{JsSuccess, JsError, JsNumber, JsObject, JsResult, JsValue, Format}
 import de.sciss.file._
-import de.sciss.mellite.Document
+import de.sciss.mellite.{Folder, ConfluentDocument, Element, Document}
 import java.text.SimpleDateFormat
 import java.util.{Date, Locale}
 import de.sciss.synth.proc.Confluent
@@ -17,12 +17,23 @@ package object coelestis {
   type S = Confluent
   type D = S#D
 
-  private lazy val desktop = userHome / "Desktop"
-  lazy val sessionFile  = desktop / "MachinaeCoelestis" / "mellite" / "MachinaeCoelestis.mllt"
-  // lazy val sessionFile2 = desktop / "Indeterminus" / "Indeterminus.mllt"
+  def sessionName = "Indeterminus"
 
-  lazy val firstDate    = "2013-08-16 17:10:27".toDate
-  lazy val lastDate     = "2013-08-27 01:44:54".toDate
+  private lazy val desktop = userHome / "Desktop"
+  // lazy val sessionFile  = desktop / "MachinaeCoelestis" / "mellite" / "MachinaeCoelestis.mllt"
+  lazy val sessionFile  = desktop / "Indeterminus" / s"$sessionName.mllt"
+
+  lazy val iteration    = 3
+  lazy val timelineName = s"Mechanik_it$iteration" // "Timeline"
+
+  // lazy val firstDate    = "2013-08-16 17:10:27".toDate
+  // lazy val lastDate     = "2013-08-27 01:44:54".toDate
+
+  // on May 18th ProcImpl serialization was revised. There is incompatible material in the session
+  // file. I suppose the actual production doesn't start yet before that date.
+  // lazy val firstDate    = "2013-05-15 18:14:25".toDate
+  lazy val firstDate    = "2013-05-15 18:14:25".toDate
+  lazy val lastDate     = "2013-05-30 00:03:18".toDate
   lazy val firstDateT   = firstDate.getTime
   lazy val lastDateT    = lastDate .getTime
 
@@ -62,11 +73,17 @@ package object coelestis {
       var lastProg = 0
       proc.addListener {
         case prog @ Processor.Progress(_, _) =>
-          val p = prog.toInt * barLength/100
-          while (lastProg < p) {
-            print('#')
-            lastProg += 1
+          val p = prog.toInt
+          if (p != lastProg) {
+            println(s"$p%")
+            lastProg = p
           }
+        //          val p = prog.toInt * barLength/100
+        //          while (lastProg < p) {
+        //            Console.print('#')
+        //            Console.flush()
+        //            lastProg += 1
+        //          }
       }
 
       proc.onComplete {
@@ -126,5 +143,24 @@ package object coelestis {
 
   implicit class RichIterable[A](it: Iterable[A]) {
     def counted: Map[A, Int] = (Map.empty[A, Int].withDefaultValue(0) /: it)((m, e) => m.updated(e, m(e) + 1))
+  }
+
+  implicit class RichConfluentDocument(doc: ConfluentDocument) {
+    def collectElements[A](pf: PartialFunction[Element[S], A])(implicit tx: S#Tx): Vec[A] = {
+      var b   = Vec.newBuilder[A]
+      val fun = pf.lift
+
+      def loop(f: Folder[S]): Unit =
+        f.iterator.foreach { elem =>
+          fun(elem).foreach(b += _)
+          elem match {
+            case ef: Element.Folder[S] => loop(ef.entity)
+            case _ =>
+          }
+        }
+
+      loop(doc.elements)
+      b.result()
+    }
   }
 }

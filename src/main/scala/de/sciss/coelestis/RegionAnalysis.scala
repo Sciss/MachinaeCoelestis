@@ -15,7 +15,6 @@ import de.sciss.synth.proc.{Attribute, ProcKeys, FadeSpec}
 import de.sciss.model.Change
 import scalax.chart
 import java.awt.{Font, Color}
-import org.jfree.data.general
 import de.sciss.intensitypalette.IntensityPalette
 import de.sciss.numbers
 
@@ -48,7 +47,7 @@ object RegionAnalysis extends AnalysisLike {
   }
 
   // lazy val jsonFile = analysisDir / "regions.json"
-  lazy val jsonFile = analysisDir / "regions2.json"
+  lazy val jsonFile = analysisDir / s"${sessionName}_regions$iteration.json"
 
   type Res = Vec[RegionCommand]
 
@@ -155,8 +154,12 @@ object RegionAnalysis extends AnalysisLike {
   case object MuteChange   extends Mutation {
     def name = "Mute"
   }
+  case object FileChange   extends Mutation {
+    def name = "File"
+  }
 
-  val PieTypes = Seq(RegionAdded, RegionRemoved, RegionSplit, MoveChange, ResizeChange, GainChange, FadeChange, MuteChange)
+  val PieTypes = Seq(RegionAdded, RegionRemoved, RegionSplit, MoveChange, ResizeChange, GainChange, FadeChange,
+    MuteChange, FileChange)
 
   case class TimedAction(time: Time, action: Action2)
 
@@ -181,7 +184,7 @@ object RegionAnalysis extends AnalysisLike {
       val ds: PieDataset = sum.toPieDataset
       val ch    = ChartFactories.PieChart(ds, legend = false)
       val plot  = ch.plot
-      val tpeSz = PieTypes.size
+      val tpeSz = PieTypes.size - 1 // -1 to exclude FileChange
       PieTypes.zipWithIndex.foreach { case (tpe, idx) =>
         import numbers.Implicits._
         // val colr = if ((idx % 2) == 0) Color.darkGray else Color.lightGray
@@ -205,9 +208,10 @@ object RegionAnalysis extends AnalysisLike {
       showChart(ch, w = 600, h = 400, frameTitle = title)
     }
 
-    val (h1, h2) = history.splitAt(history.size/2)
-    plot1(h1, "First Half")
-    plot1(h2, "Second Half")
+    //    val (h1, h2) = history.splitAt(history.size/2)
+    //    plot1(h1, "First Half")
+    //    plot1(h2, "Second Half")
+    plot1(history, "Iteration 1")
   }
 
   def globalHistory(): Vec[TimedAction] = {
@@ -237,7 +241,8 @@ object RegionAnalysis extends AnalysisLike {
             } else if (old.gain  != nu.gain ) GainChange
             else   if (old.fades != nu.fades) FadeChange
             else   if (old.muted != nu.muted) MuteChange
-            else sys.error("Unexpected")
+            else   if (old.kind  != nu.kind ) FileChange
+            else sys.error(s"Unexpected: old = $old, nu = $nu")
 
             RegionMutated(Change(old, nu), mutation)
         }
@@ -280,7 +285,7 @@ object RegionAnalysis extends AnalysisLike {
             val (t1, info, p) = masterCursor.step { implicit tx => findNextVersion(t, predPath, skip) }
             val regions = csr.stepFrom(p) { implicit tx =>
               val groupOption = session.collectElements {
-                case e: Element.ProcGroup[S] if e.name.value == "Timeline" => e.entity
+                case e: Element.ProcGroup[S] if e.name.value == timelineName => e.entity
               } .headOption // .getOrElse(sys.error("Did not find timeline named 'Timeline'"))
 
               groupOption.fold(Vec.empty[Region2]) { group =>

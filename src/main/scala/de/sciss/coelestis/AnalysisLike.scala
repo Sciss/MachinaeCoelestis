@@ -1,7 +1,8 @@
 package de.sciss.coelestis
 
 import de.sciss.lucre.confluent.{VersionInfo, Cursor}
-import de.sciss.lucre.synth.expr.Strings
+import de.sciss.synth.expr.Strings
+//import de.sciss.lucre.synth.expr.Strings
 import java.util.Date
 import scala.annotation.tailrec
 import scala.swing.{Swing, Frame}
