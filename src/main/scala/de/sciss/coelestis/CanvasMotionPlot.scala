@@ -4,12 +4,13 @@ import de.sciss.pdflitz
 import de.sciss.file._
 import scala.swing.Swing
 import Swing._
-import java.awt.Color
-import java.awt.geom.GeneralPath
+import java.awt.{BasicStroke, Color}
+import java.awt.geom.{Area, GeneralPath}
 
 object CanvasMotionPlot extends RegionAnalysisLike {
   val useVersions = false
   val connect     = true
+  val yscale      = 1.5
 
   case class Line(id: Int, y: Int, x0: Int, x1: Int)
 
@@ -27,10 +28,11 @@ object CanvasMotionPlot extends RegionAnalysisLike {
     println(s"vFirst = $vFirst, vLast = $vLast, span = $span")
 
     val w       = (span.length / 44100).toInt
-    val h       = if (useVersions) vLast - vFirst + 1 else history.size
+    val h       = math.ceil((if (useVersions) vLast - vFirst + 1 else history.size) * yscale).toInt
 
     val view = pdflitz.Generate.QuickDraw((w, h)) { g =>
       g.setColor(Color.black)
+      g.scale(1.0, yscale)
       val lines = history.zipWithIndex.map { case (timed, idx) =>
         val y   = if (useVersions) timed.time.version - vFirst else idx
         val s   = timed.action.actionSpan
@@ -40,22 +42,26 @@ object CanvasMotionPlot extends RegionAnalysisLike {
       }
 
       if (connect) {
+        val strk = new BasicStroke(1f)
         val obj = lines.groupWith(_.id == _.id)
-        obj.foreach { case head +: tail0 =>
-          val tail = if (tail0.isEmpty) Vec(head.copy(y = head.y + 1)) else tail0
+        obj.foreach { case head +: tail =>
+          // val tail = if (tail0.isEmpty) Vec(head.copy(y = head.y + 1)) else tail0
           val gp = new GeneralPath()
-          gp.moveTo(head.x0, head.y)
+          gp.moveTo(head.x0 + 0.5f, head.y + 0.5f)
           tail.foreach { line =>
             import line._
-            gp.lineTo(x0, y)
+            gp.lineTo(x0 + 0.5f, y + 0.5f)
           }
           tail.reverse.foreach { line =>
             import line._
-            gp.lineTo(x1, y)
+            gp.lineTo(x1 - 0.5f, y + 0.5f)
           }
-          gp.lineTo(head.x1, head.y)
+          gp.lineTo(head.x1 - 0.5f, head.y + 0.5f)
           gp.closePath()
-          g.fill(gp)
+          val outline = strk.createStrokedShape(gp)
+          val area    = new Area(gp)
+          area.add(new Area(outline))
+          g.fill(area)
         }
 
       } else {
