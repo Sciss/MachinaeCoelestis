@@ -17,7 +17,7 @@ package object coelestis {
   type S = Confluent
   type D = S#D
 
-  private lazy val desktop = userHome / "Desktop"
+  lazy val desktop = userHome / "Desktop"
   lazy val sessionFile  = desktop / "MachinaeCoelestis" / "mellite" / "MachinaeCoelestis.mllt"
   // lazy val sessionFile2 = desktop / "Indeterminus" / "Indeterminus.mllt"
 

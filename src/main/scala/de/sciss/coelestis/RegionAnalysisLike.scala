@@ -64,27 +64,38 @@ object RegionAnalysisLike {
   }
   sealed trait Action2 {
     def tpe: ActionType
+    def actionSpan: Span
+    def inputRegion: Region
   }
   object RegionAdded extends ActionType {
     def name = "Add"
   }
-  case class RegionAdded  (r: Region) extends Action2 {
-    def tpe = RegionAdded
+  sealed trait RegionAction extends Action2 {
+    def r: Region
+    def actionSpan  = r.time
+    def inputRegion = r
+  }
+  case class RegionAdded  (r: Region) extends RegionAction {
+    def tpe         = RegionAdded
   }
   object RegionRemoved extends ActionType {
     def name = "Remove"
   }
-  case class RegionRemoved(r: Region) extends Action2 {
+  case class RegionRemoved(r: Region) extends RegionAction {
     def tpe = RegionRemoved
   }
   case class RegionMutated(ch: Change[Region], mutation: Mutation) extends Action2 {
-    def tpe = mutation
+    def tpe         = mutation
+    def actionSpan  = ch.before.time union ch.now.time
+    def inputRegion = ch.before
   }
   object RegionSplit extends ActionType {
     def name = "Split"
   }
   case class RegionSplit(old: Change[Region], nu: Region) extends Action2 {
-    def tpe = RegionSplit
+    def tpe         = RegionSplit
+    def actionSpan  = old.before.time
+    def inputRegion = old.before
   }
 
   sealed trait Mutation extends ActionType
