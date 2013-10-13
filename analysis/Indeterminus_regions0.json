@@ -1,0 +1,9649 @@
+[ {
+  "time" : {
+    "stamp" : 1368966092753,
+    "version" : 70
+  },
+  "region" : {
+    "id" : 1342,
+    "time" : {
+      "start" : 117022,
+      "stop" : 1572880
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966121393,
+    "version" : 71
+  },
+  "region" : {
+    "id" : 1342,
+    "time" : {
+      "start" : 511350,
+      "stop" : 1572880
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966121393,
+    "version" : 71
+  },
+  "region" : {
+    "id" : 1342,
+    "time" : {
+      "start" : 117022,
+      "stop" : 1572880
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966124204,
+    "version" : 72
+  },
+  "region" : {
+    "id" : 1342,
+    "time" : {
+      "start" : 30584,
+      "stop" : 1092114
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966124204,
+    "version" : 72
+  },
+  "region" : {
+    "id" : 1342,
+    "time" : {
+      "start" : 511350,
+      "stop" : 1572880
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966267451,
+    "version" : 74
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1110444,
+      "stop" : 3496578
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966362493,
+    "version" : 75
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1290794,
+      "stop" : 3496578
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966362493,
+    "version" : 75
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1110444,
+      "stop" : 3496578
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966367385,
+    "version" : 76
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1301100,
+      "stop" : 3496578
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966367385,
+    "version" : 76
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1290794,
+      "stop" : 3496578
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966376824,
+    "version" : 77
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1089832,
+      "stop" : 3285310
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966376824,
+    "version" : 77
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1301100,
+      "stop" : 3496578
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966395128,
+    "version" : 78
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1069221,
+      "stop" : 3264699
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966395128,
+    "version" : 78
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1089832,
+      "stop" : 3285310
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966403374,
+    "version" : 79
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 3251817
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966403374,
+    "version" : 79
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1069221,
+      "stop" : 3264699
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966479587,
+    "version" : 81
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966479587,
+    "version" : 81
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 3251817
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966496762,
+    "version" : 82
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 77293,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966496762,
+    "version" : 82
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966498008,
+    "version" : 83
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 108211,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966498008,
+    "version" : 83
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 77293,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966499794,
+    "version" : 84
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 164893,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966499794,
+    "version" : 84
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 108211,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966875509,
+    "version" : 85
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 100693,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966875509,
+    "version" : 85
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 164893,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966886004,
+    "version" : 86
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 74688,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966886004,
+    "version" : 86
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 100693,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966887066,
+    "version" : 87
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 74688,
+      "curve" : {
+        "curvature" : -3.6000001430511475,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966887066,
+    "version" : 87
+  },
+  "region" : {
+    "id" : 1443,
+    "time" : {
+      "start" : 1056339,
+      "stop" : 2190325
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 74688,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_195855.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368966985919,
+    "version" : 88
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 1873239
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967033405,
+    "version" : 89
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 2523361
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967033405,
+    "version" : 89
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 1873239
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967045369,
+    "version" : 90
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 1632692
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967045369,
+    "version" : 90
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 2523361
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967067908,
+    "version" : 91
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 1902493
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967067908,
+    "version" : 91
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 1632692
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967069932,
+    "version" : 92
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 1902493
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 591612,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967069932,
+    "version" : 92
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 1902493
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967089576,
+    "version" : 93
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 1902493
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 591612,
+      "curve" : {
+        "curvature" : -2.4000000953674316,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967089576,
+    "version" : 93
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 1902493
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 591612,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967441300,
+    "version" : 95
+  },
+  "region" : {
+    "id" : 1726,
+    "time" : {
+      "start" : 854911,
+      "stop" : 1067455
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_001349.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967462898,
+    "version" : 96
+  },
+  "region" : {
+    "id" : 1726,
+    "time" : {
+      "start" : 854911,
+      "stop" : 1067455
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 185285,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_001349.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368967462898,
+    "version" : 96
+  },
+  "region" : {
+    "id" : 1726,
+    "time" : {
+      "start" : 854911,
+      "stop" : 1067455
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_001349.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968113846,
+    "version" : 98
+  },
+  "region" : {
+    "id" : 1840,
+    "time" : {
+      "start" : 341314,
+      "stop" : 858885
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968143516,
+    "version" : 100
+  },
+  "region" : {
+    "id" : 1840,
+    "time" : {
+      "start" : 357567,
+      "stop" : 875138
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968143516,
+    "version" : 100
+  },
+  "region" : {
+    "id" : 1840,
+    "time" : {
+      "start" : 341314,
+      "stop" : 858885
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968154484,
+    "version" : 101
+  },
+  "region" : {
+    "id" : 1840,
+    "time" : {
+      "start" : 474589,
+      "stop" : 992160
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968154484,
+    "version" : 101
+  },
+  "region" : {
+    "id" : 1840,
+    "time" : {
+      "start" : 357567,
+      "stop" : 875138
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968156464,
+    "version" : 102
+  },
+  "region" : {
+    "id" : 1840,
+    "time" : {
+      "start" : 490842,
+      "stop" : 1008413
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968156464,
+    "version" : 102
+  },
+  "region" : {
+    "id" : 1840,
+    "time" : {
+      "start" : 474589,
+      "stop" : 992160
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968163526,
+    "version" : 103
+  },
+  "region" : {
+    "id" : 1840,
+    "time" : {
+      "start" : 503845,
+      "stop" : 1021416
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968163526,
+    "version" : 103
+  },
+  "region" : {
+    "id" : 1840,
+    "time" : {
+      "start" : 490842,
+      "stop" : 1008413
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968197779,
+    "version" : 104
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 1902493
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 591612,
+      "curve" : {
+        "curvature" : -2.4000000953674316,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : true,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968197779,
+    "version" : 104
+  },
+  "region" : {
+    "id" : 1585,
+    "time" : {
+      "start" : 1062950,
+      "stop" : 1902493
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 591612,
+      "curve" : {
+        "curvature" : -2.4000000953674316,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120219_184205.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968801106,
+    "version" : 105
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 2236422,
+      "stop" : 2898175
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968851200,
+    "version" : 106
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 2086893,
+      "stop" : 2748646
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968851200,
+    "version" : 106
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 2236422,
+      "stop" : 2898175
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968855234,
+    "version" : 107
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 1963369,
+      "stop" : 2625122
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968855234,
+    "version" : 107
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 2086893,
+      "stop" : 2748646
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968861334,
+    "version" : 108
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 2265676,
+      "stop" : 2625122
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968861334,
+    "version" : 108
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 1963369,
+      "stop" : 2625122
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968863196,
+    "version" : 109
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 2090143,
+      "stop" : 2449589
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968863196,
+    "version" : 109
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 2265676,
+      "stop" : 2625122
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968876649,
+    "version" : 110
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 2090143,
+      "stop" : 2248051
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968876649,
+    "version" : 110
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 2090143,
+      "stop" : 2449589
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968880215,
+    "version" : 111
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 2090143,
+      "stop" : 2248051
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 139776,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968880215,
+    "version" : 111
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 2090143,
+      "stop" : 2248051
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968917673,
+    "version" : 112
+  },
+  "region" : {
+    "id" : 1929,
+    "time" : {
+      "start" : 2090143,
+      "stop" : 2248051
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 139776,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368968945736,
+    "version" : 113
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2445625
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368969674731,
+    "version" : 119
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2445625
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 12971,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368969674731,
+    "version" : 119
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2445625
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368969685938,
+    "version" : 120
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2273765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 12971,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368969685938,
+    "version" : 120
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2445625
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 12971,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368969694747,
+    "version" : 121
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2273765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 12971,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 145919,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368969694747,
+    "version" : 121
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2273765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 12971,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368969695845,
+    "version" : 122
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2273765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 12971,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 145919,
+      "curve" : {
+        "curvature" : -4.0,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368969695845,
+    "version" : 122
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2273765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 12971,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 145919,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368969701493,
+    "version" : 123
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2273765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 12971,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 107008,
+      "curve" : {
+        "curvature" : -4.0,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368969701493,
+    "version" : 123
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2273765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 12971,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 145919,
+      "curve" : {
+        "curvature" : -4.0,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368969709113,
+    "version" : 124
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2273765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 12971,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 107008,
+      "curve" : {
+        "curvature" : -2.799999952316284,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368969709113,
+    "version" : 124
+  },
+  "region" : {
+    "id" : 2056,
+    "time" : {
+      "start" : 2087021,
+      "stop" : 2273765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 12971,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 107008,
+      "curve" : {
+        "curvature" : -4.0,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_1/InterPlay130428_1/rec/mitschnitt/rec120220_013611.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971684008,
+    "version" : 128
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2153088,
+      "stop" : 2501111
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971769417,
+    "version" : 136
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2243808,
+      "stop" : 2591831
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971769417,
+    "version" : 136
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2153088,
+      "stop" : 2501111
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971785711,
+    "version" : 137
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2268000,
+      "stop" : 2616023
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971785711,
+    "version" : 137
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2243808,
+      "stop" : 2591831
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971802702,
+    "version" : 139
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2268000,
+      "stop" : 2597879
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971802702,
+    "version" : 139
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2268000,
+      "stop" : 2616023
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971804073,
+    "version" : 140
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2268000,
+      "stop" : 2597879
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 15120,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971804073,
+    "version" : 140
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2268000,
+      "stop" : 2597879
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971809369,
+    "version" : 141
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2268000,
+      "stop" : 2597879
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 15120,
+      "curve" : {
+        "curvature" : -5.0,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971809369,
+    "version" : 141
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2268000,
+      "stop" : 2597879
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 15120,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971819062,
+    "version" : 142
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2268000,
+      "stop" : 2597879
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 15120,
+      "curve" : {
+        "curvature" : -5.0,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971819062,
+    "version" : 142
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2268000,
+      "stop" : 2597879
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 15120,
+      "curve" : {
+        "curvature" : -5.0,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971819760,
+    "version" : 143
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2268000,
+      "stop" : 2597879
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "curvature" : 4.400000095367432,
+        "id" : 5
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 15120,
+      "curve" : {
+        "curvature" : -5.0,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368971819760,
+    "version" : 143
+  },
+  "region" : {
+    "id" : 2221,
+    "time" : {
+      "start" : 2268000,
+      "stop" : 2597879
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 15120,
+      "curve" : {
+        "curvature" : -5.0,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live120221_182013CutWhiteWhite.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972139613,
+    "version" : 145
+  },
+  "region" : {
+    "id" : 2452,
+    "time" : {
+      "start" : 2295442,
+      "stop" : 3178250
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972154259,
+    "version" : 146
+  },
+  "region" : {
+    "id" : 2452,
+    "time" : {
+      "start" : 2316610,
+      "stop" : 3199418
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972154259,
+    "version" : 146
+  },
+  "region" : {
+    "id" : 2452,
+    "time" : {
+      "start" : 2295442,
+      "stop" : 3178250
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972202366,
+    "version" : 149
+  },
+  "region" : {
+    "id" : 2452,
+    "time" : {
+      "start" : 2316610,
+      "stop" : 2734337
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972202366,
+    "version" : 149
+  },
+  "region" : {
+    "id" : 2566,
+    "time" : {
+      "start" : 2734337,
+      "stop" : 3199418
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972202366,
+    "version" : 149
+  },
+  "region" : {
+    "id" : 2452,
+    "time" : {
+      "start" : 2316610,
+      "stop" : 3199418
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972211689,
+    "version" : 151
+  },
+  "region" : {
+    "id" : 2566,
+    "time" : {
+      "start" : 2734337,
+      "stop" : 3199418
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 24192,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972211689,
+    "version" : 151
+  },
+  "region" : {
+    "id" : 2566,
+    "time" : {
+      "start" : 2734337,
+      "stop" : 3199418
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972212839,
+    "version" : 152
+  },
+  "region" : {
+    "id" : 2452,
+    "time" : {
+      "start" : 2316610,
+      "stop" : 2734337
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 19656,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972212839,
+    "version" : 152
+  },
+  "region" : {
+    "id" : 2452,
+    "time" : {
+      "start" : 2316610,
+      "stop" : 2734337
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972214249,
+    "version" : 153
+  },
+  "region" : {
+    "id" : 2452,
+    "time" : {
+      "start" : 2316610,
+      "stop" : 2744921
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 19656,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972214249,
+    "version" : 153
+  },
+  "region" : {
+    "id" : 2452,
+    "time" : {
+      "start" : 2316610,
+      "stop" : 2734337
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 19656,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972225289,
+    "version" : 155
+  },
+  "region" : {
+    "id" : 2566,
+    "time" : {
+      "start" : 2734337,
+      "stop" : 3199418
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 40824,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972225289,
+    "version" : 155
+  },
+  "region" : {
+    "id" : 2566,
+    "time" : {
+      "start" : 2734337,
+      "stop" : 3199418
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 24192,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972241739,
+    "version" : 156
+  },
+  "region" : {
+    "id" : 2566,
+    "time" : {
+      "start" : 2734337,
+      "stop" : 3220586
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 40824,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972241739,
+    "version" : 156
+  },
+  "region" : {
+    "id" : 2566,
+    "time" : {
+      "start" : 2734337,
+      "stop" : 3199418
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 40824,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972252542,
+    "version" : 157
+  },
+  "region" : {
+    "id" : 2566,
+    "time" : {
+      "start" : 2734337,
+      "stop" : 3220586
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 40824,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 90720,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972252542,
+    "version" : 157
+  },
+  "region" : {
+    "id" : 2566,
+    "time" : {
+      "start" : 2734337,
+      "stop" : 3220586
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 40824,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972264934,
+    "version" : 158
+  },
+  "region" : {
+    "id" : 2566,
+    "time" : {
+      "start" : 2734337,
+      "stop" : 3220586
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 40824,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 90720,
+      "curve" : {
+        "curvature" : 0.800000011920929,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972264934,
+    "version" : 158
+  },
+  "region" : {
+    "id" : 2566,
+    "time" : {
+      "start" : 2734337,
+      "stop" : 3220586
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 40824,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 90720,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972426473,
+    "version" : 159
+  },
+  "region" : {
+    "id" : 2700,
+    "time" : {
+      "start" : 2970209,
+      "stop" : 4615785
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972453853,
+    "version" : 160
+  },
+  "region" : {
+    "id" : 2700,
+    "time" : {
+      "start" : 3692945,
+      "stop" : 4615785
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972453853,
+    "version" : 160
+  },
+  "region" : {
+    "id" : 2700,
+    "time" : {
+      "start" : 2970209,
+      "stop" : 4615785
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972455438,
+    "version" : 161
+  },
+  "region" : {
+    "id" : 2700,
+    "time" : {
+      "start" : 3048833,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972455438,
+    "version" : 161
+  },
+  "region" : {
+    "id" : 2700,
+    "time" : {
+      "start" : 3692945,
+      "stop" : 4615785
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972478099,
+    "version" : 162
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3535658,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972478099,
+    "version" : 162
+  },
+  "region" : {
+    "id" : 2700,
+    "time" : {
+      "start" : 3048833,
+      "stop" : 3535658
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972478099,
+    "version" : 162
+  },
+  "region" : {
+    "id" : 2700,
+    "time" : {
+      "start" : 3048833,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972482174,
+    "version" : 163
+  },
+  "region" : {
+    "id" : 2700,
+    "time" : {
+      "start" : 3048833,
+      "stop" : 3523562
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972482174,
+    "version" : 163
+  },
+  "region" : {
+    "id" : 2700,
+    "time" : {
+      "start" : 3048833,
+      "stop" : 3535658
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972483228,
+    "version" : 164
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3553802,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972483228,
+    "version" : 164
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3535658,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972485354,
+    "version" : 165
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3568922,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972485354,
+    "version" : 165
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3553802,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972493022,
+    "version" : 166
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3568922,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972493022,
+    "version" : 166
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3568922,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972495138,
+    "version" : 167
+  },
+  "region" : {
+    "id" : 2700,
+    "time" : {
+      "start" : 3048833,
+      "stop" : 3523562
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 33264,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972495138,
+    "version" : 167
+  },
+  "region" : {
+    "id" : 2700,
+    "time" : {
+      "start" : 3048833,
+      "stop" : 3523562
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972498366,
+    "version" : 168
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3529610,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972498366,
+    "version" : 168
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3568922,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972503724,
+    "version" : 169
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3568922,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972503724,
+    "version" : 169
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3529610,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972508783,
+    "version" : 170
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3499370,
+      "stop" : 3902121
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972508783,
+    "version" : 170
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3568922,
+      "stop" : 3971673
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972517181,
+    "version" : 171
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3499370,
+      "stop" : 4053321
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972517181,
+    "version" : 171
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3499370,
+      "stop" : 3902121
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972518995,
+    "version" : 172
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3499370,
+      "stop" : 3880953
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972518995,
+    "version" : 172
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3499370,
+      "stop" : 4053321
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972540507,
+    "version" : 173
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3499370,
+      "stop" : 3880953
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 48384,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972540507,
+    "version" : 173
+  },
+  "region" : {
+    "id" : 2817,
+    "time" : {
+      "start" : 3499370,
+      "stop" : 3880953
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 36288,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/Mnemo/Misc130428_2_sel/InterPlay130428_2/rec/live/live111202_151444.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972917117,
+    "version" : 175
+  },
+  "region" : {
+    "id" : 2967,
+    "time" : {
+      "start" : 3827513,
+      "stop" : 4661989
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972956877,
+    "version" : 176
+  },
+  "region" : {
+    "id" : 2967,
+    "time" : {
+      "start" : 3826757,
+      "stop" : 4661233
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972956877,
+    "version" : 176
+  },
+  "region" : {
+    "id" : 2967,
+    "time" : {
+      "start" : 3827513,
+      "stop" : 4661989
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972957680,
+    "version" : 177
+  },
+  "region" : {
+    "id" : 2967,
+    "time" : {
+      "start" : 3826757,
+      "stop" : 4148057
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972957680,
+    "version" : 177
+  },
+  "region" : {
+    "id" : 3076,
+    "time" : {
+      "start" : 4148057,
+      "stop" : 4661233
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972957680,
+    "version" : 177
+  },
+  "region" : {
+    "id" : 2967,
+    "time" : {
+      "start" : 3826757,
+      "stop" : 4661233
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972961161,
+    "version" : 178
+  },
+  "region" : {
+    "id" : 3076,
+    "time" : {
+      "start" : 4151081,
+      "stop" : 4661233
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972961161,
+    "version" : 178
+  },
+  "region" : {
+    "id" : 3076,
+    "time" : {
+      "start" : 4148057,
+      "stop" : 4661233
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972963439,
+    "version" : 179
+  },
+  "region" : {
+    "id" : 3076,
+    "time" : {
+      "start" : 4146545,
+      "stop" : 4656697
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972963439,
+    "version" : 179
+  },
+  "region" : {
+    "id" : 3076,
+    "time" : {
+      "start" : 4151081,
+      "stop" : 4661233
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972980848,
+    "version" : 180
+  },
+  "region" : {
+    "id" : 3076,
+    "time" : {
+      "start" : 4146545,
+      "stop" : 4334641
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972980848,
+    "version" : 180
+  },
+  "region" : {
+    "id" : 3076,
+    "time" : {
+      "start" : 4146545,
+      "stop" : 4656697
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972987422,
+    "version" : 181
+  },
+  "region" : {
+    "id" : 3076,
+    "time" : {
+      "start" : 4146545,
+      "stop" : 4334641
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 49896,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972987422,
+    "version" : 181
+  },
+  "region" : {
+    "id" : 3076,
+    "time" : {
+      "start" : 4146545,
+      "stop" : 4334641
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972992620,
+    "version" : 182
+  },
+  "region" : {
+    "id" : 3076,
+    "time" : {
+      "start" : 4146545,
+      "stop" : 4325569
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 49896,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368972992620,
+    "version" : 182
+  },
+  "region" : {
+    "id" : 3076,
+    "time" : {
+      "start" : 4146545,
+      "stop" : 4334641
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 49896,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/live111202_125729Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973518385,
+    "version" : 184
+  },
+  "region" : {
+    "id" : 3226,
+    "time" : {
+      "start" : 4206410,
+      "stop" : 8412958
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973525900,
+    "version" : 185
+  },
+  "region" : {
+    "id" : 3226,
+    "time" : {
+      "start" : 4188266,
+      "stop" : 8394814
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973525900,
+    "version" : 185
+  },
+  "region" : {
+    "id" : 3226,
+    "time" : {
+      "start" : 4206410,
+      "stop" : 8412958
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973557022,
+    "version" : 186
+  },
+  "region" : {
+    "id" : 3226,
+    "time" : {
+      "start" : 4188266,
+      "stop" : 5169477
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973557022,
+    "version" : 186
+  },
+  "region" : {
+    "id" : 3334,
+    "time" : {
+      "start" : 5169477,
+      "stop" : 8394814
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973557022,
+    "version" : 186
+  },
+  "region" : {
+    "id" : 3226,
+    "time" : {
+      "start" : 4188266,
+      "stop" : 8394814
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973562477,
+    "version" : 187
+  },
+  "region" : {
+    "id" : 3334,
+    "time" : {
+      "start" : 5220885,
+      "stop" : 8394814
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973562477,
+    "version" : 187
+  },
+  "region" : {
+    "id" : 3334,
+    "time" : {
+      "start" : 5169477,
+      "stop" : 8394814
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973565051,
+    "version" : 188
+  },
+  "region" : {
+    "id" : 3334,
+    "time" : {
+      "start" : 5232981,
+      "stop" : 8394814
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973565051,
+    "version" : 188
+  },
+  "region" : {
+    "id" : 3334,
+    "time" : {
+      "start" : 5220885,
+      "stop" : 8394814
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973569463,
+    "version" : 189
+  },
+  "region" : {
+    "id" : 3334,
+    "time" : {
+      "start" : 5239029,
+      "stop" : 8394814
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973569463,
+    "version" : 189
+  },
+  "region" : {
+    "id" : 3334,
+    "time" : {
+      "start" : 5232981,
+      "stop" : 8394814
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973570731,
+    "version" : 190
+  },
+  "region" : {
+    "id" : 3334,
+    "time" : {
+      "start" : 5160405,
+      "stop" : 8316190
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973570731,
+    "version" : 190
+  },
+  "region" : {
+    "id" : 3334,
+    "time" : {
+      "start" : 5239029,
+      "stop" : 8394814
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973579864,
+    "version" : 191
+  },
+  "region" : {
+    "id" : 3226,
+    "time" : {
+      "start" : 4188266,
+      "stop" : 5169477
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 13608,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973579864,
+    "version" : 191
+  },
+  "region" : {
+    "id" : 3226,
+    "time" : {
+      "start" : 4188266,
+      "stop" : 5169477
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973596695,
+    "version" : 192
+  },
+  "region" : {
+    "id" : 3473,
+    "time" : {
+      "start" : 5193669,
+      "stop" : 8316190
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973596695,
+    "version" : 192
+  },
+  "region" : {
+    "id" : 3334,
+    "time" : {
+      "start" : 5160405,
+      "stop" : 5193669
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973596695,
+    "version" : 192
+  },
+  "region" : {
+    "id" : 3334,
+    "time" : {
+      "start" : 5160405,
+      "stop" : 8316190
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973599312,
+    "version" : 193
+  },
+  "region" : {
+    "id" : 3473,
+    "time" : {
+      "start" : 5308581,
+      "stop" : 8316190
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973599312,
+    "version" : 193
+  },
+  "region" : {
+    "id" : 3473,
+    "time" : {
+      "start" : 5193669,
+      "stop" : 8316190
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973603358,
+    "version" : 194
+  },
+  "region" : {
+    "id" : 3473,
+    "time" : {
+      "start" : 5192157,
+      "stop" : 8199766
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973603358,
+    "version" : 194
+  },
+  "region" : {
+    "id" : 3473,
+    "time" : {
+      "start" : 5308581,
+      "stop" : 8316190
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973607270,
+    "version" : 195
+  },
+  "region" : {
+    "id" : 3473,
+    "time" : {
+      "start" : 5166453,
+      "stop" : 8174062
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973607270,
+    "version" : 195
+  },
+  "region" : {
+    "id" : 3473,
+    "time" : {
+      "start" : 5192157,
+      "stop" : 8199766
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973611932,
+    "version" : 196
+  },
+  "region" : {
+    "id" : 3473,
+    "time" : {
+      "start" : 5180061,
+      "stop" : 8187670
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973611932,
+    "version" : 196
+  },
+  "region" : {
+    "id" : 3473,
+    "time" : {
+      "start" : 5166453,
+      "stop" : 8174062
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973646536,
+    "version" : 198
+  },
+  "region" : {
+    "id" : 3614,
+    "time" : {
+      "start" : 5959458,
+      "stop" : 8187670
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973646536,
+    "version" : 198
+  },
+  "region" : {
+    "id" : 3473,
+    "time" : {
+      "start" : 5180061,
+      "stop" : 5959458
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973646536,
+    "version" : 198
+  },
+  "region" : {
+    "id" : 3473,
+    "time" : {
+      "start" : 5180061,
+      "stop" : 8187670
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973648993,
+    "version" : 199
+  },
+  "region" : {
+    "id" : 3614,
+    "time" : {
+      "start" : 6006330,
+      "stop" : 8187670
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973648993,
+    "version" : 199
+  },
+  "region" : {
+    "id" : 3614,
+    "time" : {
+      "start" : 5959458,
+      "stop" : 8187670
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973650363,
+    "version" : 200
+  },
+  "region" : {
+    "id" : 3614,
+    "time" : {
+      "start" : 5954922,
+      "stop" : 8136262
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973650363,
+    "version" : 200
+  },
+  "region" : {
+    "id" : 3614,
+    "time" : {
+      "start" : 6006330,
+      "stop" : 8187670
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973677897,
+    "version" : 201
+  },
+  "region" : {
+    "id" : 3614,
+    "time" : {
+      "start" : 5954922,
+      "stop" : 6549856
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973677897,
+    "version" : 201
+  },
+  "region" : {
+    "id" : 3731,
+    "time" : {
+      "start" : 6549856,
+      "stop" : 8136262
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973677897,
+    "version" : 201
+  },
+  "region" : {
+    "id" : 3614,
+    "time" : {
+      "start" : 5954922,
+      "stop" : 8136262
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973680646,
+    "version" : 202
+  },
+  "region" : {
+    "id" : 3731,
+    "time" : {
+      "start" : 6419824,
+      "stop" : 8006230
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973680646,
+    "version" : 202
+  },
+  "region" : {
+    "id" : 3731,
+    "time" : {
+      "start" : 6549856,
+      "stop" : 8136262
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973683696,
+    "version" : 203
+  },
+  "region" : {
+    "id" : 3731,
+    "time" : {
+      "start" : 6620920,
+      "stop" : 8006230
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973683696,
+    "version" : 203
+  },
+  "region" : {
+    "id" : 3731,
+    "time" : {
+      "start" : 6419824,
+      "stop" : 8006230
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973685968,
+    "version" : 204
+  },
+  "region" : {
+    "id" : 3731,
+    "time" : {
+      "start" : 6542296,
+      "stop" : 7927606
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973685968,
+    "version" : 204
+  },
+  "region" : {
+    "id" : 3731,
+    "time" : {
+      "start" : 6620920,
+      "stop" : 8006230
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973717338,
+    "version" : 206
+  },
+  "region" : {
+    "id" : 3868,
+    "time" : {
+      "start" : 7315645,
+      "stop" : 7927606
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973717338,
+    "version" : 206
+  },
+  "region" : {
+    "id" : 3731,
+    "time" : {
+      "start" : 6542296,
+      "stop" : 7315645
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973717338,
+    "version" : 206
+  },
+  "region" : {
+    "id" : 3731,
+    "time" : {
+      "start" : 6542296,
+      "stop" : 7927606
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973720369,
+    "version" : 207
+  },
+  "region" : {
+    "id" : 3868,
+    "time" : {
+      "start" : 7326229,
+      "stop" : 7927606
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973720369,
+    "version" : 207
+  },
+  "region" : {
+    "id" : 3868,
+    "time" : {
+      "start" : 7315645,
+      "stop" : 7927606
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973721485,
+    "version" : 208
+  },
+  "region" : {
+    "id" : 3868,
+    "time" : {
+      "start" : 7312621,
+      "stop" : 7913998
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973721485,
+    "version" : 208
+  },
+  "region" : {
+    "id" : 3868,
+    "time" : {
+      "start" : 7326229,
+      "stop" : 7927606
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973753803,
+    "version" : 210
+  },
+  "region" : {
+    "id" : 3868,
+    "time" : {
+      "start" : 7312621,
+      "stop" : 7585894
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368973753803,
+    "version" : 210
+  },
+  "region" : {
+    "id" : 3868,
+    "time" : {
+      "start" : 7312621,
+      "stop" : 7913998
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/edits/rec120220_015446Cut.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368978728935,
+    "version" : 215
+  },
+  "region" : {
+    "id" : 4079,
+    "time" : {
+      "start" : 246441,
+      "stop" : 7860201
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368978757526,
+    "version" : 216
+  },
+  "region" : {
+    "id" : 4079,
+    "time" : {
+      "start" : 1504588,
+      "stop" : 9118348
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368978757526,
+    "version" : 216
+  },
+  "region" : {
+    "id" : 4079,
+    "time" : {
+      "start" : 246441,
+      "stop" : 7860201
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368978770561,
+    "version" : 217
+  },
+  "region" : {
+    "id" : 4079,
+    "time" : {
+      "start" : 1348941,
+      "stop" : 8962701
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368978770561,
+    "version" : 217
+  },
+  "region" : {
+    "id" : 4079,
+    "time" : {
+      "start" : 1504588,
+      "stop" : 9118348
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979025107,
+    "version" : 218
+  },
+  "region" : {
+    "id" : 4220,
+    "time" : {
+      "start" : 5128772,
+      "stop" : 8962701
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979025107,
+    "version" : 218
+  },
+  "region" : {
+    "id" : 4079,
+    "time" : {
+      "start" : 1348941,
+      "stop" : 5128772
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979025107,
+    "version" : 218
+  },
+  "region" : {
+    "id" : 4079,
+    "time" : {
+      "start" : 1348941,
+      "stop" : 8962701
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979027925,
+    "version" : 219
+  },
+  "region" : {
+    "id" : 4220,
+    "time" : {
+      "start" : 5144985,
+      "stop" : 8962701
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979027925,
+    "version" : 219
+  },
+  "region" : {
+    "id" : 4220,
+    "time" : {
+      "start" : 5128772,
+      "stop" : 8962701
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979032448,
+    "version" : 220
+  },
+  "region" : {
+    "id" : 4079,
+    "time" : {
+      "start" : 1348941,
+      "stop" : 5128772
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 29183,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979032448,
+    "version" : 220
+  },
+  "region" : {
+    "id" : 4079,
+    "time" : {
+      "start" : 1348941,
+      "stop" : 5128772
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979068954,
+    "version" : 221
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8177930,
+      "stop" : 8962701
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979068954,
+    "version" : 221
+  },
+  "region" : {
+    "id" : 4220,
+    "time" : {
+      "start" : 5144985,
+      "stop" : 8177930
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979068954,
+    "version" : 221
+  },
+  "region" : {
+    "id" : 4220,
+    "time" : {
+      "start" : 5144985,
+      "stop" : 8962701
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979073015,
+    "version" : 222
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8174687,
+      "stop" : 8959458
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979073015,
+    "version" : 222
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8177930,
+      "stop" : 8962701
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979085559,
+    "version" : 223
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8174687,
+      "stop" : 8959458
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979085559,
+    "version" : 223
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8174687,
+      "stop" : 8959458
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979093069,
+    "version" : 224
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8187658,
+      "stop" : 8959458
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979093069,
+    "version" : 224
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8174687,
+      "stop" : 8959458
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979095033,
+    "version" : 225
+  },
+  "region" : {
+    "id" : 4220,
+    "time" : {
+      "start" : 5144985,
+      "stop" : 8207114
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979095033,
+    "version" : 225
+  },
+  "region" : {
+    "id" : 4220,
+    "time" : {
+      "start" : 5144985,
+      "stop" : 8177930
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979107051,
+    "version" : 226
+  },
+  "region" : {
+    "id" : 4220,
+    "time" : {
+      "start" : 5144985,
+      "stop" : 7980129
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979107051,
+    "version" : 226
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8207114
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979107051,
+    "version" : 226
+  },
+  "region" : {
+    "id" : 4220,
+    "time" : {
+      "start" : 5144985,
+      "stop" : 8207114
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979131250,
+    "version" : 229
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8207114
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "curvature" : -3.4000000953674316,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979131250,
+    "version" : 229
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8207114
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979133288,
+    "version" : 230
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8207114
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "curvature" : -4.300000190734863,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979133288,
+    "version" : 230
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8207114
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "curvature" : -3.4000000953674316,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979136408,
+    "version" : 231
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8187658,
+      "stop" : 8959458
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "curvature" : 3.200000047683716,
+        "id" : 5
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979136408,
+    "version" : 231
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8187658,
+      "stop" : 8959458
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979139766,
+    "version" : 232
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8187658,
+      "stop" : 8959458
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "curvature" : 5.199999809265137,
+        "id" : 5
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979139766,
+    "version" : 232
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8187658,
+      "stop" : 8959458
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "curvature" : 3.200000047683716,
+        "id" : 5
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979149959,
+    "version" : 233
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8195765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "curvature" : -4.300000190734863,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979149959,
+    "version" : 233
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8207114
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "curvature" : -4.300000190734863,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979156671,
+    "version" : 234
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8195765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 21888,
+      "curve" : {
+        "curvature" : -4.300000190734863,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979156671,
+    "version" : 234
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8195765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "curvature" : -4.300000190734863,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979165025,
+    "version" : 235
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8195765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 21888,
+      "curve" : {
+        "curvature" : -1.8000001907348633,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979165025,
+    "version" : 235
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8195765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 21888,
+      "curve" : {
+        "curvature" : -4.300000190734863,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979179695,
+    "version" : 236
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8187658,
+      "stop" : 8654650
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "curvature" : 5.199999809265137,
+        "id" : 5
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979179695,
+    "version" : 236
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8187658,
+      "stop" : 8959458
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "curvature" : 5.199999809265137,
+        "id" : 5
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979181360,
+    "version" : 237
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8187658,
+      "stop" : 8654650
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "curvature" : 5.199999809265137,
+        "id" : 5
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 246441,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368979181360,
+    "version" : 237
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8187658,
+      "stop" : 8654650
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "curvature" : 5.199999809265137,
+        "id" : 5
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368981381704,
+    "version" : 238
+  },
+  "region" : {
+    "id" : 4079,
+    "time" : {
+      "start" : 1348941,
+      "stop" : 5128772
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 29183,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : true,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368981381704,
+    "version" : 238
+  },
+  "region" : {
+    "id" : 4079,
+    "time" : {
+      "start" : 1348941,
+      "stop" : 5128772
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 29183,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368981382603,
+    "version" : 239
+  },
+  "region" : {
+    "id" : 4220,
+    "time" : {
+      "start" : 5144985,
+      "stop" : 7980129
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : true,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368981382603,
+    "version" : 239
+  },
+  "region" : {
+    "id" : 4220,
+    "time" : {
+      "start" : 5144985,
+      "stop" : 7980129
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368981383597,
+    "version" : 240
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8195765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 21888,
+      "curve" : {
+        "curvature" : -1.8000001907348633,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : true,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368981383597,
+    "version" : 240
+  },
+  "region" : {
+    "id" : 4522,
+    "time" : {
+      "start" : 7980129,
+      "stop" : 8195765
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 0,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 21888,
+      "curve" : {
+        "curvature" : -1.8000001907348633,
+        "id" : 5
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368981384021,
+    "version" : 241
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8187658,
+      "stop" : 8654650
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "curvature" : 5.199999809265137,
+        "id" : 5
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 246441,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : true,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Added"
+  }
+}, {
+  "time" : {
+    "stamp" : 1368981384021,
+    "version" : 241
+  },
+  "region" : {
+    "id" : 4354,
+    "time" : {
+      "start" : 8187658,
+      "stop" : 8654650
+    },
+    "gain" : 1.0,
+    "fades" : [ {
+      "numFrames" : 19456,
+      "curve" : {
+        "curvature" : 5.199999809265137,
+        "id" : 5
+      },
+      "floor" : 0.0
+    }, {
+      "numFrames" : 246441,
+      "curve" : {
+        "id" : 1
+      },
+      "floor" : 0.0
+    } ],
+    "muted" : false,
+    "kind" : {
+      "class" : "AudioRegion",
+      "data" : {
+        "artifact" : "/Volumes/data/hhrutz/bounces/mechanik_ch1_bck.aif"
+      }
+    }
+  },
+  "action" : {
+    "class" : "Removed"
+  }
+} ]
