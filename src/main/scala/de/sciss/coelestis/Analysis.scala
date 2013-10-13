@@ -3,5 +3,6 @@ package de.sciss.coelestis
 object Analysis extends App {
   // AudioFileAnalysis()
   // RegionAnalysis()
-  CanvasMotionPlot("Indeterminus_regions4")
+  // CanvasMotionPlot("Indeterminus_regions4")
+  MutationHistograms()
 }
