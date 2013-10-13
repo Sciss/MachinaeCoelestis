@@ -211,7 +211,7 @@ object RegionAnalysis extends AnalysisLike {
     //    val (h1, h2) = history.splitAt(history.size/2)
     //    plot1(h1, "First Half")
     //    plot1(h2, "Second Half")
-    plot1(history, "Iteration 1")
+    plot1(history, s"Iteration $iteration")
   }
 
   def globalHistory(): Vec[TimedAction] = {

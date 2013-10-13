@@ -23,8 +23,8 @@ package object coelestis {
   // lazy val sessionFile  = desktop / "MachinaeCoelestis" / "mellite" / "MachinaeCoelestis.mllt"
   lazy val sessionFile  = desktop / "Indeterminus" / s"$sessionName.mllt"
 
-  lazy val iteration    = 3
-  lazy val timelineName = s"Mechanik_it$iteration" // "Timeline"
+  lazy val iteration    = 0
+  lazy val timelineName = s"Mechanik${if (iteration > 0) "_it"+iteration else ""}" // "Timeline"
 
   // lazy val firstDate    = "2013-08-16 17:10:27".toDate
   // lazy val lastDate     = "2013-08-27 01:44:54".toDate
@@ -32,8 +32,14 @@ package object coelestis {
   // on May 18th ProcImpl serialization was revised. There is incompatible material in the session
   // file. I suppose the actual production doesn't start yet before that date.
   // lazy val firstDate    = "2013-05-15 18:14:25".toDate
-  lazy val firstDate    = "2013-05-15 18:14:25".toDate
-  lazy val lastDate     = "2013-05-30 00:03:18".toDate
+  lazy val firstDate    = {
+    val ref = if (iteration > 0) "2013-05-15 18:14:25" else "2013-05-18 23:00:00" // between 22 and 23 h
+    ref.toDate
+  }
+  lazy val lastDate     = {
+    val ref = if (iteration > 0) "2013-05-30 00:03:18" else "2013-05-23 00:00:00"
+    ref.toDate
+  }
   lazy val firstDateT   = firstDate.getTime
   lazy val lastDateT    = lastDate .getTime
 
