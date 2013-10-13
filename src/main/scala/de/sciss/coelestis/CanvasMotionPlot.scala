@@ -7,15 +7,23 @@ import Swing._
 import java.awt.{BasicStroke, Color}
 import java.awt.geom.{Area, GeneralPath}
 
-object CanvasMotionPlot extends RegionAnalysisLike {
+object CanvasMotionPlot {
+  def apply(dataBase: String, yscale: Double = 1.5): Unit = {
+    val jsonFile  = analysisDir / s"$dataBase.json"
+    val instance  = new CanvasMotionPlot(jsonFile, yscale)
+    instance.run()
+  }
+}
+
+class CanvasMotionPlot(val jsonFile: File, yscale: Double) extends RegionAnalysisLike {
   val useVersions = false
   val connect     = true
-  val yscale      = 1.5
+  // val yscale      = 1.5
 
   case class Line(id: Int, y: Int, x0: Int, x1: Int)
 
-  def apply(): Unit = {
-    val pdfFile = desktop / "machinae_canvasmotion.pdf"
+  private def run(): Unit = {
+    val pdfFile = desktop / s"${jsonFile.base}_canvasmotion.pdf"
     if (pdfFile.isFile) {
       println(s"Already generated '$pdfFile'")
       return

@@ -8,6 +8,8 @@ import de.sciss.numbers
 object RegionAnalysis extends RegionAnalysisLike {
   import RegionAnalysisLike._
 
+  def jsonFile = machinaeRegionsFile
+
   def apply(): Unit = {
     generateJSON(plotGlobal())
   }

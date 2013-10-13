@@ -136,7 +136,10 @@ trait RegionAnalysisLike extends AnalysisLike {
   val skip = 200L  // milliseconds steps
 
   // lazy val jsonFile = analysisDir / "regions.json"
-  lazy val jsonFile = analysisDir / "regions2.json"
+
+  // lazy val jsonFile = analysisDir / "regions2.json"
+
+  def jsonFile: File
 
   def generateJSON(done: => Unit): Unit = {
     if (jsonFile.isFile) {

@@ -29,6 +29,8 @@ package object coelestis {
   lazy val firstDateT   = firstDate.getTime
   lazy val lastDateT    = lastDate .getTime
 
+  lazy val machinaeRegionsFile = analysisDir / "machinae_regions.json"
+
   private val sync = new AnyRef
   private var _sessionOpen = false
 
