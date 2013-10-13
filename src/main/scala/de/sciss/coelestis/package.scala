@@ -12,6 +12,9 @@ import scala.util.Failure
 import scala.util.Success
 import scala.concurrent.stm.Txn
 import de.sciss.synth.Curve
+import scala.collection.generic.CanBuildFrom
+import scala.annotation.tailrec
+import language.higherKinds
 
 package object coelestis {
   type S = Confluent
@@ -124,7 +127,78 @@ package object coelestis {
     }
   }
 
-  implicit class RichIterable[A](it: Iterable[A]) {
+  private final class GroupWithIterator[A, CC[~] <: Iterable[~], To](it: CC[A], p: (A, A) => Boolean)
+                                                                (implicit cbf: CanBuildFrom[CC[A], A, To])
+    extends Iterator[To] {
+
+    private val peer      = it.iterator
+    private var consumed  = true
+    private var elem      = null.asInstanceOf[A]
+
+    def hasNext: Boolean = !consumed || peer.hasNext
+
+    private def pop(): A = {
+      if (!consumed) return elem
+      if (!peer.hasNext) throw new NoSuchElementException("next on empty iterator")
+      val res   = peer.next()
+      elem      = res
+      consumed  = false
+      res
+    }
+
+    def next(): To = {
+      val b = cbf()
+
+      @tailrec def loop(pred: A): Unit = {
+        b       += pred
+        consumed = true
+        if (peer.hasNext) {
+          val succ = pop()
+          if (p(pred, succ)) loop(succ)
+        }
+      }
+
+      loop(pop())
+      b.result()
+    }
+  }
+
+  implicit final class RichIterableLike[A, CC[~] <: Iterable[~]](val it: CC[A]) extends AnyVal {
+    /** Produces a map from the input elements to the frequency in which they appear in the input collection.
+      *
+      * For example:
+      * {{
+      *   val x = List("a", "a", "b", "a")
+      *   val m = x.counted
+      * }}
+      *
+      * produces `Map("a" -> 3, "b" -> 1)`. The map has a default value of zero,
+      * so calling `m("c")` returns zero.
+      *
+      * @return a map with the elements counted.
+      */
     def counted: Map[A, Int] = (Map.empty[A, Int].withDefaultValue(0) /: it)((m, e) => m.updated(e, m(e) + 1))
+
+    /** Clumps the collection into groups based on a predicate which determines if successive elements
+      * belong to the same group.
+      *
+      * For example:
+      * {{
+      *   val x = List("a", "a", "b", "a", "b", "b")
+      *   x.groupWith(_ == _).to[Vector]
+      * }}
+      *
+      * produces `Vector(List("a", "a"), List("b"), List("a"), List("b", "b"))`.
+      *
+      * @param p    a function which is evaluated with successive pairs of the input collection. As long
+      *             as the predicate holds (the function returns `true`), elements are lumped together.
+      *             When the predicate becomes `false`, a new group is started.
+      *
+      * @param cbf  a builder factory for the group type
+      * @tparam To  the group type
+      * @return     an iterator over the groups.
+      */
+    def groupWith[To](p: (A, A) => Boolean)(implicit cbf: CanBuildFrom[CC[A], A, To]): Iterator[To] =
+      new GroupWithIterator(it, p)
   }
 }
