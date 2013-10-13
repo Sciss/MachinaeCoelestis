@@ -17,12 +17,14 @@ package object coelestis {
   type S = Confluent
   type D = S#D
 
-  lazy val sessionFile  = userHome / "Desktop" / "MachinaeCoelestis" / "mellite" / "MachinaeCoelestis.mllt"
+  private lazy val desktop = userHome / "Desktop"
+  lazy val sessionFile  = desktop / "MachinaeCoelestis" / "mellite" / "MachinaeCoelestis.mllt"
+  // lazy val sessionFile2 = desktop / "Indeterminus" / "Indeterminus.mllt"
 
   lazy val firstDate    = "2013-08-16 17:10:27".toDate
   lazy val lastDate     = "2013-08-27 01:44:54".toDate
   lazy val firstDateT   = firstDate.getTime
-  lazy val lastDateT    = lastDate.getTime
+  lazy val lastDateT    = lastDate .getTime
 
   private val sync = new AnyRef
   private var _sessionOpen = false
