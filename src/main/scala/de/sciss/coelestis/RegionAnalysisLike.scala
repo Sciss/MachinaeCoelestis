@@ -114,6 +114,9 @@ object RegionAnalysisLike {
   case object MuteChange   extends Mutation {
     def name = "Mute"
   }
+  case object FileChange   extends Mutation {
+    def name = "File"
+  }
 
   case class TimedAction(time: Time, action: Action2)
 
@@ -192,6 +195,7 @@ trait RegionAnalysisLike extends AnalysisLike {
             } else if (old.gain  != nu.gain ) GainChange
             else   if (old.fades != nu.fades) FadeChange
             else   if (old.muted != nu.muted) MuteChange
+            else   if (old.kind  != nu.kind ) FileChange
             else sys.error("Unexpected")
 
             RegionMutated(Change(old, nu), mutation)
