@@ -33,16 +33,16 @@ trait AnalysisLike {
   }
 
   def findNextVersion(prevTime: Long, prevPath: S#Acc, minSkip: Long = 4000)
-                     (implicit tx: S#Tx): (Long, VersionInfo, S#Acc) = {
+                     (implicit tx: S#Tx, meta: Meta): (Long, VersionInfo, S#Acc) = {
     implicit val dtx: D#Tx = tx
     val p0 = masterCursor.position
 
     // find interval
     @tailrec def loopFwd(t: Long, sk: Long): (Long, Long, S#Acc) = {
-      val t1 = math.min(lastDateT, t + sk)
+      val t1 = math.min(meta.lastDateT, t + sk)
       if (LOG_SKIP) println(s"Skip >> ${dateFormat.format(new Date(t1))}")
       val p1 = p0.takeUntil(t1)
-      if (t1 < lastDateT && p1 == prevPath) {
+      if (t1 < meta.lastDateT && p1 == prevPath) {
         val sk1 = if (sk < 0x80000000L) sk << 1 else sk
         loopFwd(t1, sk1)
       } else {

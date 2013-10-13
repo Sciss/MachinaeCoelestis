@@ -43,11 +43,10 @@ object RegionAnalysis extends AnalysisLike {
   val NoFade = FadeSpec.Value(0L)
 
   def apply(): Unit = {
-    generateJSON(plotGlobal())
+    generateJSON(0)(plotGlobal(0))
   }
 
   // lazy val jsonFile = analysisDir / "regions.json"
-  lazy val jsonFile = analysisDir / s"${sessionName}_regions$iteration.json"
 
   type Res = Vec[RegionCommand]
 
@@ -86,12 +85,14 @@ object RegionAnalysis extends AnalysisLike {
     AutoFormat[Vec[RegionCommand]]
   }
 
-  def generateJSON(done: => Unit): Unit = {
-    if (jsonFile.isFile) {
-      println(s"File '$jsonFile' already generated.")
+  def generateJSON(_iteration: Int)(done: => Unit): Unit = {
+    val meta = Meta(_iteration)
+    import meta._
+    if (regionJsonFile.isFile) {
+      println(s"File '$regionJsonFile' already generated.")
       done
     } else {
-      val p = gather()
+      val p = gather(iteration)
       // sucky executor spawns daemon threads
       new Thread {
         override def run(): Unit = {
@@ -102,8 +103,8 @@ object RegionAnalysis extends AnalysisLike {
       }
       p.monitor(barLength = 100)
       p.foreach { xs =>
-        println(s"\nWriting '$jsonFile'...")
-        JsIO.write(xs, jsonFile)
+        println(s"\nWriting '$regionJsonFile'...")
+        JsIO.write(xs, regionJsonFile)
         // quit()
         done
       }
@@ -163,8 +164,8 @@ object RegionAnalysis extends AnalysisLike {
 
   case class TimedAction(time: Time, action: Action2)
 
-  def plotGlobal(): Unit = {
-    val history = globalHistory()
+  def plotGlobal(iteration: Int): Unit = {
+    val history = globalHistory(iteration)
 
     import chart._
     import Charting._
@@ -214,8 +215,10 @@ object RegionAnalysis extends AnalysisLike {
     plot1(history, s"Iteration $iteration")
   }
 
-  def globalHistory(): Vec[TimedAction] = {
-    val data  = JsIO.read[Res](jsonFile).get
+  def globalHistory(iteration: Int): Vec[TimedAction] = {
+    val meta  = Meta(iteration)
+    import meta._
+    val data  = JsIO.read[Res](regionJsonFile).get
     // var state = Map.empty[Int, Region2]
 
     var history = Vec.empty[TimedAction]
@@ -270,8 +273,10 @@ object RegionAnalysis extends AnalysisLike {
     history // .foreach(println)
   }
 
-  def gather(): Processor[Res, Any] = {
-    val csr = analysisCursor
+  def gather(iteration: Int): Processor[Res, Any] = {
+    implicit val meta  = Meta(iteration)
+    import meta._
+    val csr   = analysisCursor
 
     val proc = new ProcessorImpl[Res, Any] {
       def body(): Res = {
