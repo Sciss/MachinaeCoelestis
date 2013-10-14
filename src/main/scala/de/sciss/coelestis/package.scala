@@ -17,7 +17,7 @@ import scala.annotation.tailrec
 import language.higherKinds
 import scalax.chart.Chart
 import java.awt.{Color, Font}
-import org.jfree.chart.plot.{XYPlot, Plot}
+import org.jfree.chart.plot.{CategoryPlot, XYPlot, Plot}
 import org.jfree.chart.renderer.xy.{StandardXYBarPainter, XYBarRenderer}
 import org.jfree.data.xy.{DefaultXYZDataset, XYZDataset}
 
@@ -207,28 +207,66 @@ package object coelestis {
       */
     def groupWith[To](p: (A, A) => Boolean)(implicit cbf: CanBuildFrom[CC[A], A, To]): Iterator[To] =
       new GroupWithIterator(it, p)
+
+    def meanVariance(implicit num: Fractional[A]): (A, A) = {
+      var sum   = num.zero
+      var size  = num.zero
+      val one   = num.one
+      import num.mkNumericOps
+      it.foreach { e =>
+        sum  += e
+        size += one
+      }
+      val mean = sum / size
+      var vari = num.zero
+      it.foreach { e =>
+        val d = e - mean
+        vari += d * d
+      }
+
+      (mean, vari)
+    }
+  }
+
+  implicit final class RichIndexedSeq[A](val sq: IndexedSeq[A]) extends AnyVal {
+    /** Nearest percentile (rounded index, no interpolation). */
+    def percentile(n: Int): A = sq((sq.size * n - 50) / 100)
   }
 
   implicit class RichChart[P <: Plot](chart: Chart[P]) {
     /** Adjust the chart with a black-on-white color scheme and
       * fonts that come out properly in PDF export.
       */
-    def printableLook()(implicit ev: P <:< XYPlot): Unit = {
-      val plot: XYPlot = chart.plot
+    def printableLook(): Unit = {
+      val plot = chart.plot
 
-      // undo the crappy "3D" look
-      plot.getRenderer match {
-        case r: XYBarRenderer => r.setBarPainter(new StandardXYBarPainter())
-        case _ =>
+      val (xAxis, yAxis) = plot match {  // shitty Plot / Renderer interfaces do not have common super types
+        case p: XYPlot       =>
+          p.setBackgroundPaint           (Color.white    )
+          p.setDomainGridlinePaint       (Color.lightGray)
+          p.setRangeGridlinePaint        (Color.lightGray)
+          p.getRenderer.setSeriesPaint(0, Color.darkGray )
+          // undo the crappy "3D" look
+          p.getRenderer match {
+            case r: XYBarRenderer => r.setBarPainter(new StandardXYBarPainter())
+            case _ =>
+          }
+          (p.getDomainAxis, p.getRangeAxis)
+        case p: CategoryPlot =>
+          p.setBackgroundPaint           (Color.white    )
+          p.setDomainGridlinePaint       (Color.lightGray)
+          p.setRangeGridlinePaint        (Color.lightGray)
+          p.getRenderer.setSeriesPaint(0, Color.darkGray )
+          // undo the crappy "3D" look
+          p.getRenderer match {
+            case r: XYBarRenderer => r.setBarPainter(new StandardXYBarPainter())
+            case _ =>
+          }
+          (p.getDomainAxis, p.getRangeAxis)
       }
 
-      plot.setBackgroundPaint           (Color.white    )
-      plot.setDomainGridlinePaint       (Color.lightGray)
-      plot.setRangeGridlinePaint        (Color.lightGray)
-      plot.getRenderer.setSeriesPaint(0, Color.darkGray )
-
-      val xAxis         = plot.getDomainAxis
-      val yAxis         = plot.getRangeAxis
+      //      val xAxis         = plot.getDomainAxis
+      //      val yAxis         = plot.getRangeAxis
       val fnt1          = new Font("Helvetica", Font.BOLD , 14)
       val fnt2          = new Font("Helvetica", Font.PLAIN, 12)
       xAxis.setLabelFont(fnt1)
@@ -238,20 +276,20 @@ package object coelestis {
     }
   }
 
-  //  implicit class RichTuple3sMore[A,B,C](it: Iterable[(A,B,C)]) {
-  //    def toXYSeries(name: Comparable[_] = "", autoSort: Boolean = true, allowDuplicateXValues: Boolean = true)
-  //      (implicit eva: A ⇒ Number, evb: B ⇒ Number): XYZSeries = {
-  //
-  //      val series = new XYZSeries(name, autoSort, allowDuplicateXValues)
-  //      it foreach { case (x,y) ⇒ series.add(x,y) }
-  //      series
-  //    }
-  //
-  //    def toXYZDataset(implicit eva: A => Comparable[A], evb: B => Comparable[B], evc: C => Number): XYZDataset = {
-  //      val dataset = new DefaultXYZDataset
-  //      it.foreach { case (x ,y, z) => dataset.addSeries()
-  //      dataset
-  //    }
-  //
-  //  }
+//  implicit class RichTuple3sMore[A,B,C](it: Iterable[(A,B,C)]) {
+//    def toXYSeries(name: Comparable[_] = "", autoSort: Boolean = true, allowDuplicateXValues: Boolean = true)
+//      (implicit eva: A ⇒ Number, evb: B ⇒ Number): XYZSeries = {
+//
+//      val series = new XYZSeries(name, autoSort, allowDuplicateXValues)
+//      it foreach { case (x,y) ⇒ series.add(x,y) }
+//      series
+//    }
+//
+//    def toXYZDataset(implicit eva: A => Comparable[A], evb: B => Comparable[B], evc: C => Number): XYZDataset = {
+//      val dataset = new DefaultXYZDataset
+//      it.foreach { case (x ,y, z) => dataset.addSeries()
+//      dataset
+//    }
+//
+//  }
 }
