@@ -61,24 +61,12 @@ object MutationHistograms extends RegionAnalysisLike {
     val ch      = ChartFactories.XYBarChart(ds,
       domainAxisLabel = "amount [s]", rangeAxisLabel = "frequency", legend = false)
     val plot    = ch.plot
-    val r       = plot.getRenderer.asInstanceOf[XYBarRenderer]
-    r.setBarPainter(new StandardXYBarPainter())
     plot.addDomainMarker(new ValueMarker(0))
-    plot.setBackgroundPaint           (Color.white    )
-    plot.setDomainGridlinePaint       (Color.lightGray)
-    plot.setRangeGridlinePaint        (Color.lightGray)
-    plot.getRenderer.setSeriesPaint(0, Color.darkGray )
 
     val xAxis   = plot.getDomainAxis.asInstanceOf[NumberAxis]
     val yAxis   = plot.getRangeAxis
 
-    // ---- setting fonts is crucial, because default serif comes out crappy with iTextPDF ----
-    val fnt1    = new Font("Helvetica", Font.BOLD , 14)
-    val fnt2    = new Font("Helvetica", Font.PLAIN, 12)
-    xAxis.setLabelFont(fnt1)
-    xAxis.setTickLabelFont(fnt2)
-    yAxis.setLabelFont(fnt1)
-    yAxis.setTickLabelFont(fnt2)
+    ch.printableLook()
 
     xAxis.setTickUnit(new NumberTickUnit(1) {
       override def valueToString(bin: Double) = {

@@ -15,6 +15,10 @@ import de.sciss.synth.Curve
 import scala.collection.generic.CanBuildFrom
 import scala.annotation.tailrec
 import language.higherKinds
+import scalax.chart.Chart
+import java.awt.{Color, Font}
+import org.jfree.chart.plot.{XYPlot, Plot}
+import org.jfree.chart.renderer.xy.{StandardXYBarPainter, XYBarRenderer}
 
 package object coelestis {
   type S = Confluent
@@ -202,5 +206,34 @@ package object coelestis {
       */
     def groupWith[To](p: (A, A) => Boolean)(implicit cbf: CanBuildFrom[CC[A], A, To]): Iterator[To] =
       new GroupWithIterator(it, p)
+  }
+
+  implicit class RichChart[P <: Plot](chart: Chart[P]) {
+    /** Adjust the chart with a black-on-white color scheme and
+      * fonts that come out properly in PDF export.
+      */
+    def printableLook()(implicit ev: P <:< XYPlot): Unit = {
+      val plot: XYPlot = chart.plot
+
+      // undo the crappy "3D" look
+      plot.getRenderer match {
+        case r: XYBarRenderer => r.setBarPainter(new StandardXYBarPainter())
+        case _ =>
+      }
+
+      plot.setBackgroundPaint           (Color.white    )
+      plot.setDomainGridlinePaint       (Color.lightGray)
+      plot.setRangeGridlinePaint        (Color.lightGray)
+      plot.getRenderer.setSeriesPaint(0, Color.darkGray )
+
+      val xAxis         = plot.getDomainAxis
+      val yAxis         = plot.getRangeAxis
+      val fnt1          = new Font("Helvetica", Font.BOLD , 14)
+      val fnt2          = new Font("Helvetica", Font.PLAIN, 12)
+      xAxis.setLabelFont(fnt1)
+      xAxis.setTickLabelFont(fnt2)
+      yAxis.setLabelFont(fnt1)
+      yAxis.setTickLabelFont(fnt2)
+    }
   }
 }
