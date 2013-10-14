@@ -1,28 +1,14 @@
 package de.sciss.coelestis
 
-import de.sciss.file._
 import de.sciss.model.Change
 import de.sciss.numbers.Implicits._
 import scalax.chart.{ChartFactories, Charting}
 import Charting._
 import org.jfree.chart.plot.ValueMarker
-import java.awt.{Font, Color}
 import org.jfree.chart.axis.{NumberTickUnit, NumberAxis}
-import org.jfree.chart.renderer.xy.{StandardXYBarPainter, XYBarRenderer}
 
 object MutationHistograms extends RegionAnalysisLike {
   import RegionAnalysisLike._
-
-  private def actions(name: String, iteration: Int = -1): Vec[TimedAction] =
-    if (name == "Indeterminus" && iteration < 0) {
-      (0 to 4).flatMap { iter =>
-        val jsonFile = analysisDir / s"${name}_regions$iter.json"
-        globalHistory(jsonFile)
-      } .sortBy(_.time.version) // sortin not actually necessary for the below plot...
-    } else {
-      val jsonFile = analysisDir / s"${name}_regions${if (name == "Indeterminus") iteration.toString else ""}.json"
-      globalHistory(jsonFile)
-    }
 
   private def resizeData: PartialFunction[TimedAction, Double] = {
     case TimedAction(_, RegionMutated(change, ResizeChange)) =>
@@ -47,7 +33,7 @@ object MutationHistograms extends RegionAnalysisLike {
 
 
   def apply(name: String, iteration: Int = -1, tpe: Mutation = ResizeChange): Unit = {
-    val history = actions(name, iteration)
+    val history = specificHistory(name, iteration)
     val rel     = data(history, tpe)
 
     def bin(dur: Double) = ((dur.abs / 0.06).log / 3.log + 1).toInt.clip(0, 10) * dur.signum

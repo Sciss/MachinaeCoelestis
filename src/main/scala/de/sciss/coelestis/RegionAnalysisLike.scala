@@ -144,6 +144,17 @@ trait RegionAnalysisLike extends AnalysisLike {
 
   // def jsonFile: File
 
+  protected def specificHistory(name: String, iteration: Int = -1): Vec[TimedAction] =
+    if (name == "Indeterminus" && iteration < 0) {
+      (0 to 4).flatMap { iter =>
+        val jsonFile = analysisDir / s"${name}_regions$iter.json"
+        globalHistory(jsonFile)
+      } .sortBy(_.time.version) // sortin not actually necessary for the below plot...
+    } else {
+      val jsonFile = analysisDir / s"${name}_regions${if (name == "Indeterminus") iteration.toString else ""}.json"
+      globalHistory(jsonFile)
+    }
+
   def generateJSON(jsonFile: File)(done: => Unit): Unit = {
     if (jsonFile.isFile) {
       println(s"File '$jsonFile' already generated.")

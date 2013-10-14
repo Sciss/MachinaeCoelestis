@@ -6,13 +6,13 @@ import org.jfree.data.statistics.{BoxAndWhiskerItem, DefaultBoxAndWhiskerCategor
 import org.jfree.chart.ChartFactory
 import org.jfree.chart.plot.CategoryPlot
 import scalax.chart.Chart
-import org.jfree.chart.axis.{NumberAxis, LogarithmicAxis, LogAxis}
+import org.jfree.chart.axis.{NumberAxis, LogAxis}
 
 object BoxGranularity extends RegionAnalysisLike {
   import RegionAnalysisLike._
 
-  def apply(): Unit = {
-    val history = globalHistory(machinaeRegionsFile)
+  def apply(name: String, iteration: Int = 0): Unit = {
+    val history = specificHistory(name, iteration)
 
     val states = history.scanLeft(Set.empty[Region])((state, timed) =>
       timed.action match {
@@ -63,6 +63,9 @@ object BoxGranularity extends RegionAnalysisLike {
     yAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits())
     // yAxis.setAutoRangeNextLogFlag()
     plot.setRangeAxis(yAxis)
+    // println(s"yAxis low ${yAxis.getLowerBound} high ${yAxis.getUpperBound}")
+    yAxis.setLowerBound(0.5)
+    yAxis.setUpperBound(450)
     val rnd   = new BoxAndWhiskerRenderer2
     // val r     = plot.getRenderer.asInstanceOf[BoxAndWhiskerRenderer]
     plot.setRenderer(rnd)
@@ -70,9 +73,10 @@ object BoxGranularity extends RegionAnalysisLike {
     // r.setItemMargin(0.33) - doesn't seem to have any effect...
     rnd.setWhiskerWidth(0.5)
     // rnd.setMeanVisible(false) // makes little sense due to the logarithmic scaling
+    plot.getDomainAxis.setVisible(false)
 
     ch.printableLook()
     // r.setSeriesPaint(0, Color.lightGray)
-    showChart(ch, 400, 400)
+    showChart(ch, 400, 400, frameTitle = s"$name : $iteration")
   }
 }

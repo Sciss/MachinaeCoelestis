@@ -10,5 +10,6 @@ object Analysis extends App {
   // MutationHistograms("Indeterminus", iteration = 4, tpe = MoveChange)
   // MutationHistograms("machinae", iteration = 0, tpe = MoveChange)
   // PunchCard()
-  BoxGranularity()
+  BoxGranularity("Indeterminus", iteration = -1)
+  // BoxGranularity("machinae")
 }
