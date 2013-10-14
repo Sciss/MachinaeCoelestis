@@ -8,5 +8,6 @@ object Analysis extends App {
   // CanvasMotionPlot("Indeterminus_regions4")
 
   // MutationHistograms("Indeterminus", iteration = 4, tpe = MoveChange)
-  MutationHistograms("machinae", iteration = 0, tpe = MoveChange)
+  // MutationHistograms("machinae", iteration = 0, tpe = MoveChange)
+  PunchCard()
 }

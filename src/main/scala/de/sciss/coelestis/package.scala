@@ -19,6 +19,7 @@ import scalax.chart.Chart
 import java.awt.{Color, Font}
 import org.jfree.chart.plot.{XYPlot, Plot}
 import org.jfree.chart.renderer.xy.{StandardXYBarPainter, XYBarRenderer}
+import org.jfree.data.xy.{DefaultXYZDataset, XYZDataset}
 
 package object coelestis {
   type S = Confluent
@@ -236,4 +237,21 @@ package object coelestis {
       yAxis.setTickLabelFont(fnt2)
     }
   }
+
+  //  implicit class RichTuple3sMore[A,B,C](it: Iterable[(A,B,C)]) {
+  //    def toXYSeries(name: Comparable[_] = "", autoSort: Boolean = true, allowDuplicateXValues: Boolean = true)
+  //      (implicit eva: A ⇒ Number, evb: B ⇒ Number): XYZSeries = {
+  //
+  //      val series = new XYZSeries(name, autoSort, allowDuplicateXValues)
+  //      it foreach { case (x,y) ⇒ series.add(x,y) }
+  //      series
+  //    }
+  //
+  //    def toXYZDataset(implicit eva: A => Comparable[A], evb: B => Comparable[B], evc: C => Number): XYZDataset = {
+  //      val dataset = new DefaultXYZDataset
+  //      it.foreach { case (x ,y, z) => dataset.addSeries()
+  //      dataset
+  //    }
+  //
+  //  }
 }
