@@ -7,29 +7,23 @@ import Swing._
 import java.awt.{BasicStroke, Color}
 import java.awt.geom.{Area, GeneralPath}
 
-object CanvasMotionPlot {
-  def apply(dataBase: String, yscale: Double = 1.5): Unit = {
-    val jsonFile  = analysisDir / s"$dataBase.json"
-    val instance  = new CanvasMotionPlot(jsonFile, yscale)
-    instance.run()
-  }
-}
-
-class CanvasMotionPlot(val jsonFile: File, yscale: Double) extends RegionAnalysisLike {
+object CanvasMotionPlot extends RegionAnalysisLike {
   val useVersions = false
   val connect     = true
   // val yscale      = 1.5
 
   case class Line(id: Int, y: Int, x0: Int, x1: Int)
 
-  private def run(): Unit = {
+  def apply(dataBase: String, yscale: Double = 1.5): Unit = {
+    val jsonFile  = analysisDir / s"$dataBase.json"
+
     val pdfFile = desktop / s"${jsonFile.base}_canvasmotion.pdf"
     if (pdfFile.isFile) {
       println(s"Already generated '$pdfFile'")
       return
     }
 
-    val history = globalHistory()
+    val history = globalHistory(jsonFile)
     val vFirst  = history.head.time.version
     val vLast   = history.last.time.version
     val span    = history.view.map(_.action.actionSpan).reduce(_ union _)

@@ -4,20 +4,19 @@ import scalax.chart
 import java.awt.{Font, Color}
 import de.sciss.intensitypalette.IntensityPalette
 import de.sciss.numbers
+import de.sciss.file.File
 
 object RegionAnalysis extends RegionAnalysisLike {
   import RegionAnalysisLike._
 
-  def jsonFile = machinaeRegionsFile
-
-  def apply(): Unit = {
-    generateJSON(plotGlobal())
+  def apply(jsonFile: File = machinaeRegionsFile): Unit = {
+    generateJSON(jsonFile)(plotGlobal(jsonFile))
   }
 
   val PieTypes = Seq(RegionAdded, RegionRemoved, RegionSplit, MoveChange, ResizeChange, GainChange, FadeChange, MuteChange)
 
-  def plotGlobal(): Unit = {
-    val history = globalHistory()
+  def plotGlobal(jsonFile: File): Unit = {
+    val history = globalHistory(jsonFile)
 
     import chart._
     import Charting._

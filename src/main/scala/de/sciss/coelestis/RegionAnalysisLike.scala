@@ -142,9 +142,9 @@ trait RegionAnalysisLike extends AnalysisLike {
 
   // lazy val jsonFile = analysisDir / "regions2.json"
 
-  def jsonFile: File
+  // def jsonFile: File
 
-  def generateJSON(done: => Unit): Unit = {
+  def generateJSON(jsonFile: File)(done: => Unit): Unit = {
     if (jsonFile.isFile) {
       println(s"File '$jsonFile' already generated.")
       done
@@ -168,7 +168,7 @@ trait RegionAnalysisLike extends AnalysisLike {
     }
   }
 
-  def globalHistory(): Vec[TimedAction] = {
+  def globalHistory(jsonFile: File): Vec[TimedAction] = {
     val data  = JsIO.read[Res](jsonFile).get
     // var state = Map.empty[Int, Region]
 
