@@ -11,7 +11,7 @@ import java.awt.Color
 import de.sciss.file._
 
 object PunchCard extends RegionAnalysisLike {
-  def apply(name: String = "Indeterminus"): Unit = {
+  def apply(name: String = "machinae"): Unit = {
     val history   = if (name == "Indeterminus") {
       (0 to 4).flatMap { iter =>
         val jsonFile = analysisDir / s"${name}_regions$iter.json"
@@ -31,7 +31,7 @@ object PunchCard extends RegionAnalysisLike {
     val data  = times.counted
     val max   = data.values.max
     // `sqrt` for better visibilty, `* 0.5` because the circles are too large
-    val norm  = Array.tabulate(7, 24)((d, h) => (data(d, h).toDouble / max).sqrt * 0.5)
+    val norm  = Array.tabulate(7, 24)((d, h) => (data(d, h).toDouble / max).sqrt * 0.52)
 
     val ms = new MatrixSeries("punch", 7, 24) {
       data = norm
@@ -57,6 +57,7 @@ object PunchCard extends RegionAnalysisLike {
     yAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits())
     xAxis.setRange(-0.5, 23.5)
     yAxis.setRange( 0.5, 7.5)
+    yAxis.setInverted(true)
 
     yAxis.asInstanceOf[NumberAxis].setTickUnit(new NumberTickUnit(1) {
       private val days = Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")
@@ -64,6 +65,6 @@ object PunchCard extends RegionAnalysisLike {
     })
 
     ch.printableLook()
-    showChart(ch, 600, 300)
+    showChart(ch, 600, 300, frameTitle = name)
   }
 }
