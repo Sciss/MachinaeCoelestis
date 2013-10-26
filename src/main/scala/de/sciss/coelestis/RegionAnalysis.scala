@@ -4,26 +4,41 @@ import scalax.chart
 import java.awt.{Font, Color}
 import de.sciss.intensitypalette.IntensityPalette
 import de.sciss.numbers
-import de.sciss.file.File
+import de.sciss.file._
 
 object RegionAnalysis extends RegionAnalysisLike {
   import RegionAnalysisLike._
 
-  def reportFileChanges = true
+  def reportFileChanges = false
 
-  def apply(jsonFile: File = machinaeRegionsFile, percent: Boolean = true): Unit = {
-    generateJSON(jsonFile)(plotGlobal(jsonFile, percent = percent))
+  sealed trait Split
+  case object SplitNone extends Split
+  case object SplitHalf extends Split
+  case class  SplitAt(time: Long) extends Split
+
+  def apply(files: Seq[(File, Split)] = (machinaeRegionsFile, SplitHalf) :: Nil, percent: Boolean = true): Unit = {
+    def loop(f: List[(File,Split)]): Unit = f match {
+      case (headF, _) :: tail => generateJSON(headF)(loop(tail))
+      case Nil => plotGlobal(files, percent = percent)
+    }
+    loop(files.toList)
   }
 
   val PieTypes = Seq(RegionAdded, RegionRemoved, RegionSplit, MoveChange, ResizeChange, GainChange, FadeChange, MuteChange)
 
-  def plotGlobal(jsonFile: File, percent: Boolean): Unit = {
-    val history = globalHistory(jsonFile)
-
-    if (reportFileChanges) {
-      history.foreach {
-        case action @ TimedAction(_, RegionMutated(_, FileChange)) => println(action)
-        case _ =>
+  def plotGlobal(files: Seq[(File, Split)], percent: Boolean): Unit = {
+    val history = files.toIndexedSeq.map { case (f, sp) =>
+      val data = globalHistory(f)
+      if (reportFileChanges) {
+        data.foreach {
+          case action @ TimedAction(_, RegionMutated(_, FileChange)) => println(action)
+          case _ =>
+        }
+      }
+      sp match {
+        case SplitNone      => (data, Vec.empty)
+        case SplitHalf      => data.splitAt(data.size/2)
+        case SplitAt(time)  => data.span(_.time.stamp < time)
       }
     }
 
@@ -63,6 +78,7 @@ object RegionAnalysis extends RegionAnalysisLike {
         plot.setSectionPaint(tpe.name, colr)
       }
       // plot.setSectionPaint(RegionRemoved.name, Color.white)
+      plot.setSectionPaint(FileChange.name, Color.black)
       plot.setBackgroundPaint(Color.white)
       plot.setLabelBackgroundPaint(null)
       plot.setLabelOutlinePaint(null)
@@ -81,8 +97,14 @@ object RegionAnalysis extends RegionAnalysisLike {
       showChart(ch, w = 600, h = 400, frameTitle = title)
     }
 
-    val (h1, h2) = history.splitAt(history.size/2)
-    plot1(h1, "First Half")
-    plot1(h2, "Second Half")
+    val h1 = history.flatMap(_._1).sortBy(_.time.stamp) // sorting actually not needed
+    val h2 = history.flatMap(_._2).sortBy(_.time.stamp) // sorting actually not needed
+    val names = files.map(_._1.base).mkString(", ")
+    if (h2.isEmpty) {
+      plot1(h1, names)
+    } else {
+      plot1(h1, s"$names (First Half)")
+      plot1(h2, s"$names (Second Half)")
+    }
   }
 }

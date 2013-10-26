@@ -37,6 +37,8 @@ package object coelestis {
   lazy val machinaeRegionsFile  = analysisDir / "machinae_regions.json"
   def indetFile(it: Int)        = analysisDir / s"Indeterminus_regions$it.json"
 
+  lazy val indetSplits = Map(1 -> 1369690322061L, 2 -> 1369740292685L, 3 -> 1369855011120L)
+
   private val sync = new AnyRef
   private var _sessionOpen = false
 
