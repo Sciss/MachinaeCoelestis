@@ -132,6 +132,11 @@ object RegionAnalysisLike {
     implicit val fmtRegionCmd = AutoFormat[RegionCommand]
     AutoFormat[Vec[RegionCommand]]
   }
+
+  sealed trait Split
+  case object SplitNone extends Split
+  case object SplitHalf extends Split
+  case class  SplitAt(time: Long) extends Split
 }
 trait RegionAnalysisLike extends AnalysisLike {
   import RegionAnalysisLike._

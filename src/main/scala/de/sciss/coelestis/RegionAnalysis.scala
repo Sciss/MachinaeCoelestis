@@ -10,12 +10,6 @@ object RegionAnalysis extends RegionAnalysisLike {
   import RegionAnalysisLike._
 
   def reportFileChanges = false
-
-  sealed trait Split
-  case object SplitNone extends Split
-  case object SplitHalf extends Split
-  case class  SplitAt(time: Long) extends Split
-
   def apply(files: Seq[(File, Split)] = (machinaeRegionsFile, SplitHalf) :: Nil, percent: Boolean = true): Unit = {
     def loop(f: List[(File,Split)]): Unit = f match {
       case (headF, _) :: tail => generateJSON(headF)(loop(tail))

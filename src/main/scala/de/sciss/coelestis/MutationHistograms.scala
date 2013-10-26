@@ -31,10 +31,20 @@ object MutationHistograms extends RegionAnalysisLike {
     actions.collect(fun)
   }
 
+  case class Spec(name: String, iteration: Int = -1, split: Split)
 
-  def apply(name: String, iteration: Int = -1, tpe: Mutation = ResizeChange): Unit = {
-    val history = specificHistory(name, iteration)
-    val rel     = data(history, tpe)
+  def apply(specs: Seq[Spec], tpe: Mutation = ResizeChange, second: Boolean = false): Unit = {
+    // name: String, iteration: Int = -1, tpe: Mutation = ResizeChange
+    val rel = specs.toIndexedSeq.flatMap { spec =>
+      val h0      = specificHistory(spec.name, spec.iteration)
+      val history = spec.split match {
+        case SplitNone      => h0
+        case SplitHalf      => val (h1, h2) = h0.splitAt(h0.size/2)       ; if (second) h2 else h1
+        case SplitAt(time)  => val (h1, h2) = h0.span(_.time.stamp < time); if (second) h2 else h1
+      }
+      val rel     = data(history, tpe)
+      rel
+    }
 
     def bin(dur: Double) = ((dur.abs / 0.06).log / 3.log + 1).toInt.clip(0, 10) * dur.signum
 
@@ -65,6 +75,8 @@ object MutationHistograms extends RegionAnalysisLike {
 
     yAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits())
 
-    showChart(ch, 500, 375, frameTitle = s"$name : $iteration")
+    val title = specs.map(spec => s"${spec.name} : ${spec.iteration}").mkString(", ")
+
+    showChart(ch, 500, 375, frameTitle = s"$title${if (second) " [second half]" else ""} - $tpe")
   }
 }

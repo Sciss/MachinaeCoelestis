@@ -7,9 +7,9 @@ object Analysis extends App {
   // AudioFileAnalysis()
   // RegionAnalysis()
 
-    RegionAnalysis(files = Seq(
-      indetFile(0) -> SplitNone
-    ), percent = false)
+  //    RegionAnalysis(files = Seq(
+  //      indetFile(0) -> SplitNone
+  //    ), percent = false)
 
   //  RegionAnalysis(files = Seq(
   //    // indetFile(0) -> SplitNone,
@@ -34,7 +34,14 @@ object Analysis extends App {
   // CanvasMotionPlot("Indeterminus_regions4")
   // CanvasMotionPlot("machinae_regions")
 
-  // MutationHistograms("Indeterminus", iteration = 4, tpe = MoveChange)
+  import MutationHistograms.Spec
+  MutationHistograms(Seq(
+    Spec("Indeterminus", iteration = 1, split = SplitAt(indetSplits(1))),
+    Spec("Indeterminus", iteration = 2, split = SplitAt(indetSplits(2))),
+    Spec("Indeterminus", iteration = 3, split = SplitAt(indetSplits(3))),
+    Spec("Indeterminus", iteration = 4, split = SplitNone)
+  ), tpe = ResizeChange, second = false)
+
   // MutationHistograms("machinae", iteration = 0, tpe = MoveChange)
   // PunchCard()
   // BoxGranularity("Indeterminus", iteration = -1)
