@@ -9,14 +9,23 @@ import de.sciss.file.File
 object RegionAnalysis extends RegionAnalysisLike {
   import RegionAnalysisLike._
 
-  def apply(jsonFile: File = machinaeRegionsFile): Unit = {
-    generateJSON(jsonFile)(plotGlobal(jsonFile))
+  def reportFileChanges = true
+
+  def apply(jsonFile: File = machinaeRegionsFile, percent: Boolean = true): Unit = {
+    generateJSON(jsonFile)(plotGlobal(jsonFile, percent = percent))
   }
 
   val PieTypes = Seq(RegionAdded, RegionRemoved, RegionSplit, MoveChange, ResizeChange, GainChange, FadeChange, MuteChange)
 
-  def plotGlobal(jsonFile: File): Unit = {
+  def plotGlobal(jsonFile: File, percent: Boolean): Unit = {
     val history = globalHistory(jsonFile)
+
+    if (reportFileChanges) {
+      history.foreach {
+        case action @ TimedAction(_, RegionMutated(_, FileChange)) => println(action)
+        case _ =>
+      }
+    }
 
     import chart._
     import Charting._
@@ -30,7 +39,16 @@ object RegionAnalysis extends RegionAnalysisLike {
       //    println(s"history ${history.size}, counted ${sum0.size}")
       //    println(sum0.map { case (action, count) => action.name -> count })
 
-      val sum  = sum0.toIndexedSeq.sortBy(x => PieTypes.indexOf(x._1)).map { case (action, count) => action.name -> count }
+      val sum1 = sum0.toIndexedSeq.sortBy(x => PieTypes.indexOf(x._1)).map { case (action, count) => action.name -> count }
+      val sum  = if (percent) {
+        val n = sum1.map(_._2).sum
+        println(s"Total number of actions: $n")
+        val f = 100.0/n
+        sum1.map { case (action, count) => action -> (count * f + 0.5).toInt }
+      } else {
+        sum1
+      }
+
       val sumM = sum.toMap
 
       val ds: PieDataset = sum.toPieDataset
@@ -52,7 +70,10 @@ object RegionAnalysis extends RegionAnalysisLike {
       plot.setLabelFont(new Font("Helvetica", Font.PLAIN, 12))
       plot.setOutlineVisible(false)
 
-      val lbGen: (org.jfree.data.general.PieDataset,Comparable[_]) => String = { (_, key) =>
+      val lbGen: (org.jfree.data.general.PieDataset,Comparable[_]) => String = if (percent) {
+        (_, key) => s"$key ${sumM(key.toString)}%"
+      }
+      else { (_, key) =>
         s"${sumM(key.toString)}\u00D7 $key"
       }
       ch.labelGenerator = Some(lbGen)

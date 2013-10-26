@@ -213,21 +213,20 @@ trait RegionAnalysisLike extends AnalysisLike {
         }
         val time = sq.head.time
         // heuristically determine split and two-step resize
-        (history, action) match {
+        history = (history, action) match {
           case (init :+ TimedAction(`time`,
             RegionMutated(Change(rOld @ Region(_, span1Old, _, _, _, _), rOld2 @ Region(_, span1, _, _, _, _)), ResizeChange)),
               RegionAdded(rNew @ Region(_, span2, _, _, _, _)))
-            if span1Old.start == span1.start && span1.stop == span2.start && span1Old.stop == span2.stop =>
+              if span1Old.start == span1.start && span1.stop == span2.start && span1Old.stop == span2.stop =>
 
-              history = init :+ TimedAction(time, RegionSplit(Change(rOld, rOld2), rNew))
+            init :+ TimedAction(time, RegionSplit(Change(rOld, rOld2), rNew))
 
           case (init :+ TimedAction(timeOld, RegionSplit(Change(rOld, rOld2), rNu)), RegionRemoved(rRem)) if rRem == rNu || rRem == rOld2 =>
-              history = init :+ TimedAction(timeOld,
-                RegionMutated(Change(rOld, if (rRem == rNu) rOld2 else rNu), ResizeChange))
+            init :+ TimedAction(timeOld,
+              RegionMutated(Change(rOld, if (rRem == rNu) rOld2 else rNu), ResizeChange))
 
           case _ =>
-
-              history :+= TimedAction(time, action)
+            history :+ TimedAction(time, action)
         }
       }
     }

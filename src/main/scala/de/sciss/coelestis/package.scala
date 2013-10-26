@@ -34,7 +34,8 @@ package object coelestis {
   lazy val firstDateT   = firstDate.getTime
   lazy val lastDateT    = lastDate .getTime
 
-  lazy val machinaeRegionsFile = analysisDir / "machinae_regions.json"
+  lazy val machinaeRegionsFile  = analysisDir / "machinae_regions.json"
+  def indetFile(it: Int)        = analysisDir / s"Indeterminus_regions$it.json"
 
   private val sync = new AnyRef
   private var _sessionOpen = false

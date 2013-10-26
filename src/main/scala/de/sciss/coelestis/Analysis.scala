@@ -5,11 +5,13 @@ object Analysis extends App {
 
   // AudioFileAnalysis()
   // RegionAnalysis()
+  RegionAnalysis(jsonFile = indetFile(4))
   // CanvasMotionPlot("Indeterminus_regions4")
+  // CanvasMotionPlot("machinae_regions")
 
   // MutationHistograms("Indeterminus", iteration = 4, tpe = MoveChange)
   // MutationHistograms("machinae", iteration = 0, tpe = MoveChange)
-  PunchCard()
+  // PunchCard()
   // BoxGranularity("Indeterminus", iteration = -1)
   // BoxGranularity("machinae")
 }
