@@ -35,14 +35,57 @@ object Analysis extends App {
   // CanvasMotionPlot("machinae_regions")
 
   import MutationHistograms.Spec
+
+  //  MutationHistograms(Seq(
+  //    Spec("machinae", iteration = -1, split = SplitNone)
+  //  ), tpe = ResizeChange, second = false)
+
+  //  MutationHistograms(Seq(
+  //    Spec("Indeterminus", iteration = -1, split = SplitNone)
+  //  ), tpe = ResizeChange, second = false)
+
+  //  MutationHistograms(Seq(
+  //    Spec("Indeterminus", iteration = 0, split = SplitNone)
+  //  ), tpe = ResizeChange, second = false)
+
+  //  MutationHistograms(Seq(
+  //    Spec("Indeterminus", iteration = 1, split = SplitAt(indetSplits(1))),
+  //    Spec("Indeterminus", iteration = 2, split = SplitAt(indetSplits(2))),
+  //    Spec("Indeterminus", iteration = 3, split = SplitAt(indetSplits(3))),
+  //    Spec("Indeterminus", iteration = 4, split = SplitNone)
+  //  ), tpe = ResizeChange, second = false)
+
+  //  MutationHistograms(Seq(
+  //    Spec("Indeterminus", iteration = 1, split = SplitAt(indetSplits(1))),
+  //    Spec("Indeterminus", iteration = 2, split = SplitAt(indetSplits(2))),
+  //    Spec("Indeterminus", iteration = 3, split = SplitAt(indetSplits(3)))
+  //  ), tpe = ResizeChange, second = true)
+
+  //  MutationHistograms(Seq(
+  //    Spec("machinae", iteration = -1, split = SplitNone)
+  //  ), tpe = MoveChange, second = false)
+
+  //  MutationHistograms(Seq(
+  //    Spec("Indeterminus", iteration = -1, split = SplitNone)
+  //  ), tpe = MoveChange, second = false)
+
+  //  MutationHistograms(Seq(
+  //    Spec("Indeterminus", iteration = 0, split = SplitNone)
+  //  ), tpe = MoveChange, second = false)
+
+  //  MutationHistograms(Seq(
+  //    Spec("Indeterminus", iteration = 1, split = SplitAt(indetSplits(1))),
+  //    Spec("Indeterminus", iteration = 2, split = SplitAt(indetSplits(2))),
+  //    Spec("Indeterminus", iteration = 3, split = SplitAt(indetSplits(3))),
+  //    Spec("Indeterminus", iteration = 4, split = SplitNone)
+  //  ), tpe = MoveChange, second = false)
+
   MutationHistograms(Seq(
     Spec("Indeterminus", iteration = 1, split = SplitAt(indetSplits(1))),
     Spec("Indeterminus", iteration = 2, split = SplitAt(indetSplits(2))),
-    Spec("Indeterminus", iteration = 3, split = SplitAt(indetSplits(3))),
-    Spec("Indeterminus", iteration = 4, split = SplitNone)
-  ), tpe = ResizeChange, second = false)
+    Spec("Indeterminus", iteration = 3, split = SplitAt(indetSplits(3)))
+  ), tpe = MoveChange, second = true)
 
-  // MutationHistograms("machinae", iteration = 0, tpe = MoveChange)
   // PunchCard()
   // BoxGranularity("Indeterminus", iteration = -1)
   // BoxGranularity("machinae")

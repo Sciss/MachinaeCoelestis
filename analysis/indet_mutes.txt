@@ -1,0 +1,14 @@
+rec0
+
+it1: 3 still muted
+it2: 9 still muted
+it3: 9 still muted
+it4: 4 still muted
+--- 26 or approx. 25% of all
+
+rec1
+
+it1: 9 still muted
+it2: 11 still muted
+it3: 16 still muted
+--- 36 or approx. 50% of all

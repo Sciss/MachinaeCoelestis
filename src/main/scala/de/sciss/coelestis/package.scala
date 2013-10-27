@@ -236,6 +236,8 @@ package object coelestis {
     def percentile(n: Int): A = sq((sq.size * n - 50) / 100)
   }
 
+  private lazy val defaultFontFace = "Helvetica"  // "Arial"
+
   implicit class RichChart[P <: Plot](chart: Chart[P]) {
     /** Adjust the chart with a black-on-white color scheme and
       * fonts that come out properly in PDF export.
@@ -270,8 +272,8 @@ package object coelestis {
 
       //      val xAxis         = plot.getDomainAxis
       //      val yAxis         = plot.getRangeAxis
-      val fnt1          = new Font("Helvetica", Font.BOLD , 14)
-      val fnt2          = new Font("Helvetica", Font.PLAIN, 12)
+      val fnt1          = new Font(defaultFontFace, Font.BOLD , 14)
+      val fnt2          = new Font(defaultFontFace, Font.PLAIN, 12)
       xAxis.setLabelFont(fnt1)
       xAxis.setTickLabelFont(fnt2)
       yAxis.setLabelFont(fnt1)

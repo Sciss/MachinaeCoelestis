@@ -66,7 +66,8 @@ object MutationHistograms extends RegionAnalysisLike {
 
     xAxis.setTickUnit(new NumberTickUnit(1) {
       override def valueToString(bin: Double) = {
-        val sig = if (bin < 0) "\u2212" else if (bin > 0) "+" else ""
+        // warning: sucky iTextPDF swallows the minus character \u2212, while n-dash works :-E
+        val sig = if (bin < 0) "\u2013" /* "\u2212" */ else if (bin > 0) "+" else ""
         f"""$sig${lim(bin.toInt).abs}%1.2f""" // no unit as it is written in on the axis labl
       }
     })
