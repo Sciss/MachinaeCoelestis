@@ -30,8 +30,10 @@ object Analysis extends App {
   //    indetFile(4) -> SplitNone
   //  ), percent = false)
 
+  // CanvasMotionPlot("Indeterminus_regions1", split = 1)
+  // CanvasMotionPlot("Indeterminus_regions2", split = 2)
+  CanvasMotionPlot("Indeterminus_regions3", split = 3)
 
-  // CanvasMotionPlot("Indeterminus_regions4")
   // CanvasMotionPlot("machinae_regions")
 
   import MutationHistograms.Spec
@@ -91,7 +93,7 @@ object Analysis extends App {
   // BoxGranularity("Indeterminus", iteration = 1)
   // BoxGranularity("Indeterminus", iteration = 2)
   // BoxGranularity("Indeterminus", iteration = 3)
-  BoxGranularity("Indeterminus", iteration = -1)
+  // BoxGranularity("Indeterminus", iteration = -1)
 
   // BoxGranularity("machinae")
 }
