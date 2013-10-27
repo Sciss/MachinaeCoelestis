@@ -1,13 +1,14 @@
 package de.sciss.coelestis
 
 import org.jfree.chart.renderer.category.{CategoryItemRendererState, BoxAndWhiskerRenderer}
-import java.awt.{Color, Paint, LinearGradientPaint, Stroke, BasicStroke, Graphics2D}
+import java.awt.{Composite, AlphaComposite, Color, Paint, LinearGradientPaint, Stroke, BasicStroke, Graphics2D}
 import java.awt.geom.{Point2D, Ellipse2D, Line2D, Rectangle2D}
-import org.jfree.chart.plot.CategoryPlot
+import org.jfree.chart.plot.{PlotOrientation, CategoryMarker, CategoryPlot}
 import org.jfree.chart.axis.{ValueAxis, CategoryAxis}
 import org.jfree.data.category.CategoryDataset
 import org.jfree.data.statistics.BoxAndWhiskerCategoryDataset
 import de.sciss.numbers
+import org.jfree.ui.RectangleEdge
 
 class BoxAndWhiskerRenderer2 extends BoxAndWhiskerRenderer {
   override def drawVerticalItem(g: Graphics2D, state: CategoryItemRendererState, dataArea: Rectangle2D,
@@ -118,6 +119,54 @@ class BoxAndWhiskerRenderer2 extends BoxAndWhiskerRenderer {
         g.draw(new Line2D.Double(xx, yyMedian, xx + state.getBarWidth, yyMedian))
       }
     }
+  }
+
+  override def drawDomainMarker(g2: Graphics2D, plot: CategoryPlot, axis: CategoryAxis,
+                                marker: CategoryMarker, dataArea: Rectangle2D): Unit = marker match {
+    case _: LeftCategoryMarker => drawLeftMarker(g2, plot, axis, marker, dataArea)
+    case _ => super.drawDomainMarker(g2, plot, axis, marker, dataArea)
+  }
+
+  private def drawLeftMarker(g2: Graphics2D, plot: CategoryPlot, axis: CategoryAxis,
+                             marker: CategoryMarker, dataArea: Rectangle2D): Unit = {
+    val cat     = marker.getKey
+    val dataset = plot.getDataset(plot.getIndexOf(this))
+    val catIdx  = dataset.getColumnIndex(cat)
+    if (catIdx < 0) return
+
+    val savedComposite = g2.getComposite
+    g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, marker.getAlpha))
+
+    axis.getCategoryMargin
+    val numCat      = dataset.getColumnCount
+    val domainEdge  = plot.getDomainAxisEdge
+    val left        = axis.getCategoryStart   (catIdx, numCat, dataArea, domainEdge)
+    val gap         = calculateCategoryGapSize(axis  , numCat, dataArea, domainEdge)
+    val v           = left - gap/2 // axis.getCategoryMiddle(columnIndex, dataset.getColumnCount, dataArea, domainEdge)
+    val line        = if (plot.getOrientation == PlotOrientation.HORIZONTAL)
+      new Line2D.Double(dataArea.getMinX, v, dataArea.getMaxX, v)
+    else
+      new Line2D.Double(v, dataArea.getMinY, v, dataArea.getMaxY)
+
+    g2.setPaint (marker.getPaint )
+    g2.setStroke(marker.getStroke)
+    g2.draw(line)
+
+    g2.setComposite(savedComposite)
+  }
+
+  private def calculateCategoryGapSize(axis: CategoryAxis, categoryCount: Int, area: Rectangle2D,
+                                       edge: RectangleEdge): Double = {
+    if (categoryCount == 0) return 0.0
+
+    val available = if ((edge == RectangleEdge.TOP) || (edge == RectangleEdge.BOTTOM))
+      area.getWidth
+    else if ((edge == RectangleEdge.LEFT) || (edge == RectangleEdge.RIGHT))
+      area.getHeight
+    else
+      0.0
+
+    available * axis.getCategoryMargin / (categoryCount - 1)
   }
 
   var meanWidth     = 0.2

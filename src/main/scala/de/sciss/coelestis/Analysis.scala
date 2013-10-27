@@ -80,13 +80,18 @@ object Analysis extends App {
   //    Spec("Indeterminus", iteration = 4, split = SplitNone)
   //  ), tpe = MoveChange, second = false)
 
-  MutationHistograms(Seq(
-    Spec("Indeterminus", iteration = 1, split = SplitAt(indetSplits(1))),
-    Spec("Indeterminus", iteration = 2, split = SplitAt(indetSplits(2))),
-    Spec("Indeterminus", iteration = 3, split = SplitAt(indetSplits(3)))
-  ), tpe = MoveChange, second = true)
+  //  MutationHistograms(Seq(
+  //    Spec("Indeterminus", iteration = 1, split = SplitAt(indetSplits(1))),
+  //    Spec("Indeterminus", iteration = 2, split = SplitAt(indetSplits(2))),
+  //    Spec("Indeterminus", iteration = 3, split = SplitAt(indetSplits(3)))
+  //  ), tpe = MoveChange, second = true)
 
   // PunchCard()
-  // BoxGranularity("Indeterminus", iteration = -1)
+
+  // BoxGranularity("Indeterminus", iteration = 1)
+  // BoxGranularity("Indeterminus", iteration = 2)
+  // BoxGranularity("Indeterminus", iteration = 3)
+  BoxGranularity("Indeterminus", iteration = -1)
+
   // BoxGranularity("machinae")
 }

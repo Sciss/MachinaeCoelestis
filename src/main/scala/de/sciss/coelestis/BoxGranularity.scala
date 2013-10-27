@@ -4,15 +4,21 @@ import de.sciss.model.Change
 import de.sciss.numbers.Implicits._
 import org.jfree.data.statistics.{BoxAndWhiskerItem, DefaultBoxAndWhiskerCategoryDataset}
 import org.jfree.chart.ChartFactory
-import org.jfree.chart.plot.CategoryPlot
+import org.jfree.chart.plot.{CategoryMarker, ValueMarker, CategoryPlot}
 import scalax.chart.Chart
 import org.jfree.chart.axis.{NumberAxis, LogAxis}
+import org.jfree.ui.Layer
+import java.awt.{BasicStroke, Color}
 
 object BoxGranularity extends RegionAnalysisLike {
   import RegionAnalysisLike._
 
   def apply(name: String, iteration: Int = 0): Unit = {
-    val history = specificHistory(name, iteration)
+    val history   = specificHistory(name, iteration)
+    val splitIdx  = if (name == "Indeterminus" && (iteration == -1 || (iteration >= 1 && iteration <= 3))) {
+      val t = indetSplits(iteration.max(1)) // all iterations = use first split
+      history.indexWhere(_.time.stamp >= t)
+    } else -1
 
     val states = history.scanLeft(Set.empty[Region])((state, timed) =>
       timed.action match {
@@ -23,7 +29,13 @@ object BoxGranularity extends RegionAnalysisLike {
       }
     )
 
-    val selected = (1 to 10).map { i => states(i.linlin(0, 10, 0, states.size - 1).toInt) }
+    def binIdx(bin: Int) = bin.linlin(0, 10, 0, states.size - 1).toInt
+
+    val splitBin = (1 to 10).find(binIdx(_) >= splitIdx).getOrElse(-1)
+
+    if (splitIdx != -1) println(s"Recursion bin is $splitBin")
+
+    val selected = (1 to 10).map { i => states(binIdx(i)) }
     // selected.foreach(x => println(x.size))
 
     val ds = new DefaultBoxAndWhiskerCategoryDataset()
@@ -73,7 +85,18 @@ object BoxGranularity extends RegionAnalysisLike {
     // r.setItemMargin(0.33) - doesn't seem to have any effect...
     rnd.setWhiskerWidth(0.5)
     // rnd.setMeanVisible(false) // makes little sense due to the logarithmic scaling
-    plot.getDomainAxis.setVisible(false)
+    val xAxis = plot.getDomainAxis
+    xAxis.setVisible(false)
+
+    println(xAxis)
+
+    if (splitBin > 0) {
+      // plot.addDomainMarker(new ValueMarker(splitBin))
+      val mark = new LeftCategoryMarker(splitBin - 1, Color.gray,
+        new BasicStroke(1f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND, 4f, Array[Float](2f, 2f), 0f))
+      mark.setDrawAsLine(true)
+      plot.addDomainMarker(mark, Layer.BACKGROUND)
+    }
 
     ch.printableLook()
     // r.setSeriesPaint(0, Color.lightGray)
