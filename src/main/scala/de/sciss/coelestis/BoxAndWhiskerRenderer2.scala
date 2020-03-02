@@ -1,13 +1,14 @@
 package de.sciss.coelestis
 
-import org.jfree.chart.renderer.category.{CategoryItemRendererState, BoxAndWhiskerRenderer}
-import java.awt.{Composite, AlphaComposite, Color, Paint, LinearGradientPaint, Stroke, BasicStroke, Graphics2D}
-import java.awt.geom.{Point2D, Ellipse2D, Line2D, Rectangle2D}
-import org.jfree.chart.plot.{PlotOrientation, CategoryMarker, CategoryPlot}
-import org.jfree.chart.axis.{ValueAxis, CategoryAxis}
+import java.awt.geom.{Ellipse2D, Line2D, Point2D, Rectangle2D}
+import java.awt.{AlphaComposite, BasicStroke, Color, Graphics2D, LinearGradientPaint, Paint, Stroke}
+
+import de.sciss.numbers
+import org.jfree.chart.axis.{CategoryAxis, ValueAxis}
+import org.jfree.chart.plot.{CategoryMarker, CategoryPlot, PlotOrientation}
+import org.jfree.chart.renderer.category.{BoxAndWhiskerRenderer, CategoryItemRendererState}
 import org.jfree.data.category.CategoryDataset
 import org.jfree.data.statistics.BoxAndWhiskerCategoryDataset
-import de.sciss.numbers
 import org.jfree.ui.RectangleEdge
 
 class BoxAndWhiskerRenderer2 extends BoxAndWhiskerRenderer {
@@ -171,7 +172,7 @@ class BoxAndWhiskerRenderer2 extends BoxAndWhiskerRenderer {
 
   var meanWidth     = 0.2
   var meanFilled    = false
-  var whiskerStroke = Option[Stroke](new BasicStroke(1.0f, BasicStroke.CAP_SQUARE, BasicStroke.JOIN_MITER, 10.0f,
+  var whiskerStroke: Option[Stroke] = Some(new BasicStroke(1.0f, BasicStroke.CAP_SQUARE, BasicStroke.JOIN_MITER, 10.0f,
     Array[Float](3f, 3f), 0.0f))
   var boxFillPaint: Paint = new LinearGradientPaint(0f, 0f, 0.5f, 0f, Array[Float](0f, 1f),
     Array[Color](new Color(0xC0, 0xC0, 0xC0, 0xFF), new Color(0xC0, 0xC0, 0xC0, 0x00)))

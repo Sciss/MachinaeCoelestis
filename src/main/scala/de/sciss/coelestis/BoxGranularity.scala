@@ -1,14 +1,15 @@
 package de.sciss.coelestis
 
+import java.awt.{BasicStroke, Color}
+
 import de.sciss.model.Change
 import de.sciss.numbers.Implicits._
+import org.jfree.chart.{ChartFactory, JFreeChart}
+import org.jfree.chart.axis.{LogAxis, NumberAxis}
+import org.jfree.chart.plot.CategoryPlot
 import org.jfree.data.statistics.{BoxAndWhiskerItem, DefaultBoxAndWhiskerCategoryDataset}
-import org.jfree.chart.ChartFactory
-import org.jfree.chart.plot.{CategoryMarker, ValueMarker, CategoryPlot}
-import scalax.chart.Chart
-import org.jfree.chart.axis.{NumberAxis, LogAxis}
 import org.jfree.ui.Layer
-import java.awt.{BasicStroke, Color}
+import scalax.chart.Chart
 
 object BoxGranularity extends RegionAnalysisLike {
   import RegionAnalysisLike._
@@ -63,9 +64,9 @@ object BoxGranularity extends RegionAnalysisLike {
     }
 
     val chj = ChartFactory.createBoxAndWhiskerChart(/* title = */ null, null /* "categ" */, "value", ds, /* legend = */ false)
-    val ch = new Chart[CategoryPlot] {
-      lazy val peer = chj
-      def plot = chj.getPlot.asInstanceOf[CategoryPlot]
+    val ch: Chart[CategoryPlot] = new Chart[CategoryPlot] {
+      lazy val peer: JFreeChart = chj
+      def plot: CategoryPlot = chj.getPlot.asInstanceOf[CategoryPlot]
     }
 
     val plot        = ch.plot

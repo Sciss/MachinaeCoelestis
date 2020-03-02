@@ -1,15 +1,17 @@
 package de.sciss.coelestis
 
-import de.sciss.lucre.confluent.{VersionInfo, Cursor}
-import de.sciss.lucre.synth.expr.Strings
-import java.util.Date
-import scala.annotation.tailrec
-import scala.swing.{Swing, Frame}
-import scala.swing.event.WindowClosing
 import java.awt.Rectangle
-import de.sciss.pdflitz.Generate.QuickDraw
+import java.util.Date
+
+import de.sciss.lucre.confluent.{Cursor, VersionInfo}
+import de.sciss.lucre.synth.expr.Strings
 import de.sciss.pdflitz
+import de.sciss.pdflitz.Generate.QuickDraw
 import scalax.chart.Chart
+
+import scala.annotation.tailrec
+import scala.swing.event.WindowClosing
+import scala.swing.{Frame, Swing}
 
 trait AnalysisLike {
   lazy val masterCursor: Cursor[S, D] = session.cursors.cursor

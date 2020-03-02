@@ -1,28 +1,26 @@
 package de.sciss.coelestis
 
-import de.sciss.mellite.Element
-import de.sciss.synth.proc.Grapheme
+import java.awt.Color
+import java.awt.geom.Line2D
+
+import de.sciss.file._
 import de.sciss.lucre.confluent
 import de.sciss.lucre.confluent.VersionPeek
+import de.sciss.mellite.Element
+import de.sciss.play.json.AutoFormat
 import de.sciss.processor.Processor
 import de.sciss.processor.impl.ProcessorImpl
-import de.sciss.file._
-import play.api.libs.json.Format
-import scala.concurrent.{blocking, Await}
-import scala.concurrent.duration.Duration
-import scalax.chart.{ChartFactories, Charting}
-import org.jfree.data.time.SimpleTimePeriod
-import scala.swing.{Frame, Swing}
-import scala.swing.event.WindowClosing
+import de.sciss.synth.proc.Grapheme
 import org.jfree.chart.labels.{ItemLabelAnchor, ItemLabelPosition}
-import org.jfree.ui.TextAnchor
-import java.awt.{Rectangle, Color}
-import de.sciss.pdflitz
-import de.sciss.pdflitz.Generate.QuickDraw
-import Swing._
-import de.sciss.play.json.AutoFormat
 import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer
-import java.awt.geom.Line2D
+import org.jfree.data.time.SimpleTimePeriod
+import org.jfree.ui.TextAnchor
+import play.api.libs.json.Format
+import scalax.chart.{ChartFactories, Charting}
+
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, blocking}
+import scala.swing.Swing
 
 object AudioFileAnalysis extends AnalysisLike {
   val skip      = 4000L  // milliseconds steps
@@ -34,12 +32,12 @@ object AudioFileAnalysis extends AnalysisLike {
 
   def apply(): Unit = generateJSON(plot())
 
-  lazy val jsonFile = analysisDir / "audiofiles.json"
+  lazy val jsonFile: File = analysisDir / "audiofiles.json"
 
   implicit def format: Format[Vec[AudioFileCommand]] = {
-    implicit val fmtTime    = AutoFormat[Time          ]
-    implicit val fmtInfo    = AutoFormat[AudioFileInfo ]
-    implicit val fmtCmd     = AutoFormat[AudioFileCommand       ]
+    implicit val fmtTime: Format[Time]              = AutoFormat[Time             ]
+    implicit val fmtInfo: Format[AudioFileInfo]     = AutoFormat[AudioFileInfo    ]
+    implicit val fmtCmd : Format[AudioFileCommand]  = AutoFormat[AudioFileCommand ]
     AutoFormat[Vec[AudioFileCommand]]
   }
 

@@ -2,10 +2,10 @@ package de.sciss.coelestis
 
 import de.sciss.model.Change
 import de.sciss.numbers.Implicits._
-import scalax.chart.{ChartFactories, Charting}
-import Charting._
+import org.jfree.chart.axis.{NumberAxis, NumberTickUnit}
 import org.jfree.chart.plot.ValueMarker
-import org.jfree.chart.axis.{NumberTickUnit, NumberAxis}
+import scalax.chart.ChartFactories
+import scalax.chart.Charting._
 
 object MutationHistograms extends RegionAnalysisLike {
   import RegionAnalysisLike._
@@ -65,7 +65,7 @@ object MutationHistograms extends RegionAnalysisLike {
     ch.printableLook()
 
     xAxis.setTickUnit(new NumberTickUnit(1) {
-      override def valueToString(bin: Double) = {
+      override def valueToString(bin: Double): String = {
         // warning: sucky iTextPDF swallows the minus character \u2212, while n-dash works :-E
         val sig = if (bin < 0) "\u2013" /* "\u2212" */ else if (bin > 0) "+" else ""
         f"""$sig${lim(bin.toInt).abs}%1.2f""" // no unit as it is written in on the axis labl

@@ -1,14 +1,15 @@
 package de.sciss.coelestis
 
-import java.util.{TimeZone, Calendar}
-import scalax.chart.Chart
-import org.jfree.data.xy.{MatrixSeriesCollection, MatrixSeries}
-import org.jfree.chart.ChartFactory
-import org.jfree.chart.plot.{XYPlot, PlotOrientation}
-import org.jfree.chart.axis.{NumberTickUnit, NumberAxis}
-import de.sciss.numbers.Implicits._
 import java.awt.Color
+import java.util.{Calendar, TimeZone}
+
 import de.sciss.file._
+import de.sciss.numbers.Implicits._
+import org.jfree.chart.{ChartFactory, JFreeChart}
+import org.jfree.chart.axis.{NumberAxis, NumberTickUnit}
+import org.jfree.chart.plot.{PlotOrientation, XYPlot}
+import org.jfree.data.xy.{MatrixSeries, MatrixSeriesCollection}
+import scalax.chart.Chart
 
 object PunchCard extends RegionAnalysisLike {
   def apply(name: String = "machinae"): Unit = {
@@ -41,9 +42,9 @@ object PunchCard extends RegionAnalysisLike {
       /* yAxisLabel = */ null, /* dataset = */ mc, /* orientation = */ PlotOrientation.VERTICAL,
       /* legend = */ false, /* tooltips = */ false, /* urls = */ false)
 
-    val ch = new Chart[XYPlot] {
-      lazy val peer = chj
-      def plot = chj.getPlot.asInstanceOf[XYPlot]
+    val ch: Chart[XYPlot] = new Chart[XYPlot] {
+      lazy val peer: JFreeChart = chj
+      def plot: XYPlot = chj.getPlot.asInstanceOf[XYPlot]
     }
 
     val plot = ch.plot
@@ -61,7 +62,7 @@ object PunchCard extends RegionAnalysisLike {
 
     yAxis.asInstanceOf[NumberAxis].setTickUnit(new NumberTickUnit(1) {
       private val days = Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")
-      override def valueToString(day: Double) = days(day.toInt - 1)
+      override def valueToString(day: Double): String = days(day.toInt - 1)
     })
 
     ch.printableLook()

@@ -1,8 +1,10 @@
 package de.sciss.coelestis
 
-import java.io.{FileInputStream, FileOutputStream, OutputStreamWriter, File}
-import play.api.libs.json.{JsError, JsSuccess, Reads, Writes, Json}
-import scala.util.{Success, Failure, Try}
+import java.io.{File, FileInputStream, FileOutputStream, OutputStreamWriter}
+
+import play.api.libs.json.{JsError, JsSuccess, Json, Reads, Writes}
+
+import scala.util.{Failure, Success, Try}
 
 /** Helper object to read and write JSON objects from and to files. */
 object JsIO {

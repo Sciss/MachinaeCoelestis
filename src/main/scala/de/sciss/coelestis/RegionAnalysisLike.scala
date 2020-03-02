@@ -1,17 +1,18 @@
 package de.sciss.coelestis
 
+import de.sciss.file._
+import de.sciss.lucre.confluent
+import de.sciss.lucre.confluent.VersionPeek
+import de.sciss.mellite.{Element, ProcActions}
+import de.sciss.model.Change
+import de.sciss.play.json.{AutoFormat, Formats}
 import de.sciss.processor.Processor
 import de.sciss.processor.impl.ProcessorImpl
-import de.sciss.lucre.confluent
-import scala.concurrent._
-import de.sciss.mellite.{ProcActions, Element}
 import de.sciss.span.Span
-import de.sciss.synth.proc.{FadeSpec, ProcKeys, Attribute}
-import de.sciss.lucre.confluent.VersionPeek
-import de.sciss.file._
-import de.sciss.model.Change
-import play.api.libs.json.{JsSuccess, JsNumber, JsError, JsObject, JsResult, JsValue, Format}
-import de.sciss.play.json.{Formats, AutoFormat}
+import de.sciss.synth.proc.{Attribute, FadeSpec, ProcKeys}
+import play.api.libs.json.{Format, JsError, JsNumber, JsObject, JsResult, JsSuccess, JsValue}
+
+import scala.concurrent._
 import scala.concurrent.duration.Duration
 
 object RegionAnalysisLike {
@@ -42,7 +43,7 @@ object RegionAnalysisLike {
   case class Region(id: Int, time: Span, gain: Double, fades: (FadeSpec.Value, FadeSpec.Value),
                      muted: Boolean, kind: RegionKind) {
 
-    override def toString = {
+    override def toString: String = {
       val gainString  = if (gain == 1.0) "" else s", gain = $gain"
       val fadesString = if (fades == (NoFade, NoFade)) "" else s", $fades"
       val mutedString = if (muted) ", muted = true" else ""
@@ -57,7 +58,7 @@ object RegionAnalysisLike {
   // case class RegionCommand(time: Time, region: Region, action: Action)
   case class RegionCommand(time: Time, region: Region, action: Action)
 
-  val NoFade = FadeSpec.Value(0L)
+  val NoFade: FadeSpec.Value = FadeSpec.Value(0L)
 
   sealed trait ActionType {
     def name : String
@@ -72,30 +73,30 @@ object RegionAnalysisLike {
   }
   sealed trait RegionAction extends Action2 {
     def r: Region
-    def actionSpan  = r.time
-    def inputRegion = r
+    def actionSpan: Span = r.time
+    def inputRegion: Region = r
   }
   case class RegionAdded  (r: Region) extends RegionAction {
-    def tpe         = RegionAdded
+    def tpe: ActionType = RegionAdded
   }
   object RegionRemoved extends ActionType {
     def name = "Remove"
   }
   case class RegionRemoved(r: Region) extends RegionAction {
-    def tpe = RegionRemoved
+    def tpe: ActionType = RegionRemoved
   }
   case class RegionMutated(ch: Change[Region], mutation: Mutation) extends Action2 {
-    def tpe         = mutation
-    def actionSpan  = ch.before.time union ch.now.time
-    def inputRegion = ch.before
+    def tpe: ActionType = mutation
+    def actionSpan: Span = ch.before.time union ch.now.time
+    def inputRegion: Region = ch.before
   }
   object RegionSplit extends ActionType {
     def name = "Split"
   }
   case class RegionSplit(old: Change[Region], nu: Region) extends Action2 {
-    def tpe         = RegionSplit
-    def actionSpan  = old.before.time
-    def inputRegion = old.before
+    def tpe: ActionType = RegionSplit
+    def actionSpan: Span = old.before.time
+    def inputRegion: Region = old.before
   }
 
   sealed trait Mutation extends ActionType
@@ -122,14 +123,14 @@ object RegionAnalysisLike {
 
   implicit val format: Format[Vec[RegionCommand]] = {
     import FadeSpec.Value
-    implicit val fmtTime      = AutoFormat[Time]
+    implicit val fmtTime: Format[Time] = AutoFormat[Time]
     // implicit val fmtSpan      = AutoFormat[Span]
-    implicit val fmtFade      = AutoFormat[Value]
-    implicit val fmtFades     = Formats.Tuple2Format[Value, Value]
+    implicit val fmtFade: Format[Value] = AutoFormat[Value]
+    implicit val fmtFades: Format[(Value, Value)] = Formats.Tuple2Format[Value, Value]
     implicit val fmtFile: Format[File] = Formats.FileFormat
-    implicit val fmtRegionKind = AutoFormat[RegionKind]
-    implicit val fmtRegion    = AutoFormat[Region]
-    implicit val fmtRegionCmd = AutoFormat[RegionCommand]
+    implicit val fmtRegionKind: Format[RegionKind] = AutoFormat[RegionKind]
+    implicit val fmtRegion: Format[Region] = AutoFormat[Region]
+    implicit val fmtRegionCmd: Format[RegionCommand] = AutoFormat[RegionCommand]
     AutoFormat[Vec[RegionCommand]]
   }
 
@@ -262,10 +263,11 @@ trait RegionAnalysisLike extends AnalysisLike {
                   case (span @ Span(_, _), elems) =>
                     elems.map { timed =>
                       val proc    = timed.value
-                      val gain    = proc.attributes[Attribute.Double  ](ProcKeys.attrGain   ).map(_.value).getOrElse(1.0)
-                      val muted   = proc.attributes[Attribute.Boolean ](ProcKeys.attrMute   ).exists(_.value)
-                      val fadeIn  = proc.attributes[Attribute.FadeSpec](ProcKeys.attrFadeIn ).map(_.value).getOrElse(NoFade)
-                      val fadeOut = proc.attributes[Attribute.FadeSpec](ProcKeys.attrFadeOut).map(_.value).getOrElse(NoFade)
+                      val a       = proc.attributes
+                      val gain    = a[Attribute.Double  ](ProcKeys.attrGain   ).map(_.value).getOrElse(1.0)
+                      val muted   = a[Attribute.Boolean ](ProcKeys.attrMute   ).exists(_.value)
+                      val fadeIn  = a[Attribute.FadeSpec](ProcKeys.attrFadeIn ).map(_.value).getOrElse(NoFade)
+                      val fadeOut = a[Attribute.FadeSpec](ProcKeys.attrFadeOut).map(_.value).getOrElse(NoFade)
                       val fades   = (fadeIn, fadeOut)
                       val kind    = ProcActions.getAudioRegion(timed.span, proc) match {
                         case Some((_, audio)) => AudioRegion(audio.artifact.value)

@@ -3,7 +3,7 @@ version       := "0.1.0-SNAPSHOT"
 organization  := "de.sciss"
 homepage      := Some(url(s"https://github.com/Sciss/${name.value}"))
 licenses      := Seq("GPL v3+" -> url("http://www.gnu.org/licenses/gpl-3.0.txt"))
-scalaVersion  := "2.10.3"
+scalaVersion  := "2.10.7"
 
 resolvers ++= Seq(
   "Mandubian repository snapshots"  at "https://github.com/mandubian/mandubian-mvn/raw/master/snapshots/",

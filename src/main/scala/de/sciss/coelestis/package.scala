@@ -1,50 +1,51 @@
 package de.sciss
 
-import _root_.play.api.libs.json.{JsSuccess, JsError, JsNumber, JsObject, JsResult, JsValue, Format}
-import de.sciss.file._
-import de.sciss.mellite.Document
+import java.awt.{Color, Font}
 import java.text.SimpleDateFormat
 import java.util.{Date, Locale}
-import de.sciss.synth.proc.Confluent
-import scala.concurrent.ExecutionContext
+
+import _root_.play.api.libs.json.{Format, JsError, JsNumber, JsObject, JsResult, JsSuccess, JsValue}
+import de.sciss.file._
+import de.sciss.mellite.{ConfluentDocument, Document}
 import de.sciss.processor.Processor
-import scala.util.Failure
-import scala.util.Success
-import scala.concurrent.stm.Txn
 import de.sciss.synth.Curve
-import scala.collection.generic.CanBuildFrom
-import scala.annotation.tailrec
-import language.higherKinds
-import scalax.chart.Chart
-import java.awt.{Color, Font}
-import org.jfree.chart.plot.{CategoryPlot, XYPlot, Plot}
+import de.sciss.synth.proc.Confluent
+import org.jfree.chart.plot.{CategoryPlot, Plot, XYPlot}
 import org.jfree.chart.renderer.xy.{StandardXYBarPainter, XYBarRenderer}
-import org.jfree.data.xy.{DefaultXYZDataset, XYZDataset}
+import scalax.chart.Chart
+
+import scala.annotation.tailrec
+import scala.collection.generic.CanBuildFrom
+import scala.collection.immutable
+import scala.concurrent.ExecutionContext
+import scala.concurrent.stm.Txn
+import scala.language.higherKinds
+import scala.util.{Failure, Success}
 
 package object coelestis {
   type S = Confluent
   type D = S#D
 
-  lazy val desktop = userHome / "Desktop"
-  lazy val sessionFile  = desktop / "MachinaeCoelestis" / "mellite" / "MachinaeCoelestis.mllt"
+  lazy val desktop    : File = userHome / "Desktop"
+  lazy val sessionFile: File = desktop / "MachinaeCoelestis" / "mellite" / "MachinaeCoelestis.mllt"
   // lazy val sessionFile2 = desktop / "Indeterminus" / "Indeterminus.mllt"
 
-  lazy val firstDate    = "2013-08-16 17:10:27".toDate
-  lazy val lastDate     = "2013-08-27 01:44:54".toDate
-  lazy val firstDateT   = firstDate.getTime
-  lazy val lastDateT    = lastDate .getTime
+  lazy val firstDate  : Date = "2013-08-16 17:10:27".toDate
+  lazy val lastDate   : Date = "2013-08-27 01:44:54".toDate
+  lazy val firstDateT : Long = firstDate.getTime
+  lazy val lastDateT  : Long = lastDate .getTime
 
-  lazy val machinaeRegionsFile  = analysisDir / "machinae_regions.json"
-  def indetFile(it: Int)        = analysisDir / s"Indeterminus_regions$it.json"
+  lazy val machinaeRegionsFile: File = analysisDir / "machinae_regions.json"
+  def indetFile(it: Int)      : File = analysisDir / s"Indeterminus_regions$it.json"
 
   lazy val indetSplits = Map(1 -> 1369690322061L, 2 -> 1369740292685L, 3 -> 1369855011120L)
 
-  private val sync = new AnyRef
-  private var _sessionOpen = false
+  private val sync          = new AnyRef
+  private var _sessionOpen  = false
 
   def sessionOpen: Boolean = _sessionOpen
 
-  lazy val session      = {
+  lazy val session: ConfluentDocument = {
     sync.synchronized(_sessionOpen = true)
     Document.read(sessionFile)
   }
@@ -65,8 +66,8 @@ package object coelestis {
     override def toString = s"$productPrefix($date, version = $version)"
   }
 
-  val  Vec      = collection.immutable.IndexedSeq
-  type Vec[+A]  = collection.immutable.IndexedSeq[A]
+  val  Vec: immutable.IndexedSeq.type = collection.immutable.IndexedSeq
+  type Vec[+A]                        = collection.immutable.IndexedSeq[A]
 
   implicit def executionContext: ExecutionContext = ExecutionContext.global
 
@@ -130,7 +131,7 @@ package object coelestis {
     def writes(c: Curve): JsValue = {
       val f0 = ("id" -> JsNumber(c.id)) :: Nil
       val f1 = c match {
-        case Curve.parametric(x) => ("curvature" -> JsNumber(x)) :: f0
+        case Curve.parametric(x) => ("curvature" -> JsNumber(x.toDouble)) :: f0
         case _ => f0
       }
       JsObject(f1)

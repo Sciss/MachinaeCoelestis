@@ -1,14 +1,14 @@
 package de.sciss.coelestis
 
-import de.sciss.pdflitz
-import de.sciss.file._
-import scala.swing.Swing
-import Swing._
+import java.awt.geom.{Area, GeneralPath, Line2D}
 import java.awt.{BasicStroke, Color}
-import java.awt.geom.{Line2D, Area, GeneralPath}
+
+import de.sciss.file._
+import de.sciss.pdflitz
+
+import scala.swing.Swing._
 
 object CanvasMotionPlot extends RegionAnalysisLike {
-  import RegionAnalysisLike._
 
   val useVersions = false
   val connect     = true

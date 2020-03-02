@@ -1,8 +1,6 @@
 package de.sciss.coelestis
 
 object Analysis extends App {
-  import RegionAnalysisLike._
-  import RegionAnalysis._
 
   // AudioFileAnalysis()
   // RegionAnalysis()
@@ -35,8 +33,6 @@ object Analysis extends App {
   CanvasMotionPlot("Indeterminus_regions3", split = 3)
 
   // CanvasMotionPlot("machinae_regions")
-
-  import MutationHistograms.Spec
 
   //  MutationHistograms(Seq(
   //    Spec("machinae", iteration = -1, split = SplitNone)

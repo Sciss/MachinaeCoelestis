@@ -1,10 +1,11 @@
 package de.sciss.coelestis
 
-import scalax.chart
-import java.awt.{Font, Color}
+import java.awt.{Color, Font}
+
+import de.sciss.file._
 import de.sciss.intensitypalette.IntensityPalette
 import de.sciss.numbers
-import de.sciss.file._
+import scalax.chart
 
 object RegionAnalysis extends RegionAnalysisLike {
   import RegionAnalysisLike._
